@@ -1,0 +1,36 @@
+//--------------------------------------------------------------------------------------------------
+//= Shade.scss
+//--------------------------------------------------------------------------------------------------
+
+	#Shade
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: Z-Index(Shade);
+		background-color: Color(Black);
+		opacity: 0;
+		pointer-events: none;
+		transition-duration: .3s;
+		transition-timing-function: ease;
+		transition-property: opacity, top, margin-left;
+
+		&.Active
+		{
+			opacity: 0.5;
+			pointer-events: auto;
+
+			&.SideBarSwitched
+			{
+				margin-left: $SideBarWidthSmall;
+
+				@media #{$Medium-And-More}
+				{
+					pointer-events: none;
+					opacity: 0;
+				}
+			}
+		}
+	}

@@ -1,0 +1,151 @@
+//--------------------------------------------------------------------------------------------------
+//= TabBar.scss
+//--------------------------------------------------------------------------------------------------
+
+	#TabBar
+	{
+		> ul
+		{
+			display: flex;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			flex-wrap: wrap;
+
+			> li
+			{
+				display: flex;
+
+				> a
+				{
+					@include Font(Menu);
+					min-width: 4.8rem;
+					min-height: 4.8rem;
+					padding: 0 2.4rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					text-decoration: none;
+					color: Color(Gray, Base);
+			        box-sizing: border-box;
+			        padding-bottom: 0.2rem;
+
+					&:hover
+					{
+						color: Color(Gray, Darken1)
+					}
+
+					i,
+					span
+					{
+						pointer-events: none;
+					}
+				}
+			}
+
+			> li.Active
+			{
+				> a
+				{
+					padding-bottom: 0;
+					border-bottom: 0.2rem solid Color(Blue);
+					color: Color(Blue);
+				}
+			}
+		}
+
+		@media #{$Small-And-Less}
+		{
+			> ul
+			{
+				flex-direction: column;
+				> li
+				{
+					border-top: 0.1rem solid Color(White, Darken2);
+					overflow: hidden;
+					height: 4.8rem;
+					transition: height .3s ease, opacity .3s ease;
+
+					> a
+					{
+						padding: 0 1.6rem 0 2rem;
+						width: 100%;
+						justify-content: flex-start;
+					}
+				}
+
+				> li.Active
+				{
+					> a
+					{
+						border-bottom: none;
+						border-left: 0.4rem solid Color(Blue);
+						padding-left: 1.6rem;
+					}
+				}
+			}
+		}
+
+		@media #{$Small-And-Less}
+		{
+			#ToggleTabBar
+			{
+				display: none;
+
+				// Closed
+				&:not(:checked)
+				{
+					& + #ToggleTabBarLabel .Opened
+					{
+						display: none;
+					}
+
+					& ~ ul
+					{
+						> li
+						{
+							opacity: 0;
+							border-width: 0;
+							height: 0;
+						}
+					}
+				}
+
+				// Opened
+				&:checked
+				{
+					& + #ToggleTabBarLabel .Closed
+					{
+						display: none;
+					}
+
+					& ~ ul
+					{
+					}
+				}
+			}
+
+			#ToggleTabBarLabel
+			{
+				display: block;
+
+				> div
+				{
+					@include Font(Caption);
+
+					display: flex;
+					cursor: pointer;
+					padding: 0 1.6rem;
+					height: 4.8rem;
+					align-items: center;
+					justify-content: flex-start;
+					pointer-events: none;
+
+					> i
+					{
+						margin-left: auto;
+					}
+				}
+			}
+		}
+	}

@@ -1,0 +1,84 @@
+//--------------------------------------------------------------------------------------------------
+//= MainContainer.scss
+//--------------------------------------------------------------------------------------------------
+
+	#MainContainer
+	{
+		position: relative;
+		width: calc(100% - #{$SideBarWidth});
+		margin-left: $SideBarWidth;
+		margin-top: $GlobalHeaderHeight;
+		z-index: Z-Index(MainContainer);
+		overflow-x: hidden;
+
+		@media #{$Small-And-Less}
+		{
+			margin-left: 0;
+			margin-top: $GlobalHeaderHeightSmall;
+			width: 100%;
+		}
+
+		> #MainHeader
+		{
+			background-color: Color(White, Base);
+			border-bottom: 0.1rem solid Color(White, Darken1);
+			padding-top: 2.4rem;
+
+			@media #{$Small-And-Less}
+			{
+				padding-top: 1.6rem;
+			}
+
+			> #SectionName
+			{
+				@include Font(Headline);
+				margin: 0 2.4rem 2.4rem;
+
+				@media #{$Small-And-Less}
+				{
+					margin: 0 1.6rem 1.6rem;
+				}
+			}
+		}
+	}
+
+	//----------------------------------------------------------------------------------------------
+	//= SwitchedSideBar
+	//----------------------------------------------------------------------------------------------
+
+		// Medium ----------------------------------------------------------------------------------
+		@media #{$Medium-And-More}
+		{
+			// Transition Settings
+			#MainContainer
+			{
+				transition-duration: .3s;
+				transition-timing-function: ease;
+				transition-property: margin-left, width;
+			}
+			//
+
+			#MainContainer.SideBarSwitched
+			{
+				width: calc(100% - #{$MinimizedSideBarWidth});
+				margin-left: 6.4rem;
+			}
+		}
+
+		// Small-And-Less --------------------------------------------------------------------------
+		@media #{$Small-And-Less}
+		{
+			// Transition Settings
+			#MainContainer
+			{
+				transition-duration: .3s;
+				transition-timing-function: ease;
+				transition-property: margin-left;
+			}
+			//
+
+			#MainContainer.SideBarSwitched
+			{
+				margin-left: $SideBarWidth;
+			}
+		}

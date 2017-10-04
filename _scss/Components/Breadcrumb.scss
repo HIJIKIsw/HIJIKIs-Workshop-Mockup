@@ -1,0 +1,50 @@
+//--------------------------------------------------------------------------------------------------
+//= Breadcrumb.scss
+//--------------------------------------------------------------------------------------------------
+
+	#Breadcrumb
+	{
+		margin: 2.4rem 3.2rem 0;
+
+		@media #{$Small-And-Less}
+		{
+			margin: 1.6rem 1.6rem 0;
+		}
+
+		> ul
+		{
+			display: flex;
+			flex-wrap: wrap;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			> li
+			{
+				> a
+				{
+					@include Font(Caption);
+					white-space: nowrap;
+					text-decoration: none;
+
+					&:hover
+					{
+						color: Color(Blue);
+						text-decoration: underline;
+					}
+				}
+
+				&:after
+				{
+					@extend .mdi;
+					@include Font(Caption);
+					content: "\f142";
+				}
+			}
+		}
+	}
+
+	#PageName > h1
+	{
+		@include Font(Subheading1);
+	}

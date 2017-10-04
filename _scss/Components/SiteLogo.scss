@@ -1,0 +1,133 @@
+//--------------------------------------------------------------------------------------------------
+//= SiteLogo.scss
+//--------------------------------------------------------------------------------------------------
+
+	#SiteLogo
+	{
+		position: relative;
+		display: flex;
+		background-color: Color(Blue, Base);
+		width: $SideBarWidth;
+		height: $GlobalHeaderHeight;
+
+		@media #{$Small-And-Less}
+		{
+			position: absolute;
+			left: 0;
+			height: $GlobalHeaderHeightSmall;
+			transform: translateX(-100%);
+			z-index: Z-Index(SiteLogo);
+		}
+
+		> h1
+		{
+			width: 100%;
+			margin: 0;
+
+			> a
+			{
+				@include Font(Subheading1);
+				display: flex;
+				width: 100%;
+				height: 100%;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+
+				&:hover
+				{
+					background-color: Color(Blue, Darken1);
+				}
+
+				.Img
+				{
+					pointer-events: none;					
+					background-position: 50% 50%;
+					background-size: 100%;
+					background-repeat: no-repeat;
+				}
+
+				.Symbol
+				{
+					display: block;
+					margin-right: 0.8rem;
+					width: 32px;
+					height: 100%;
+					background-image: url('../svg/SiteSymbol.svg');
+				}
+
+				.Title
+				{
+					width: 151px;
+					height: 100%;
+					background-image: url('../svg/SiteTitle.svg');
+				}
+			}
+		}
+	}
+
+	//----------------------------------------------------------------------------------------------
+	//= SwitchedSideBar
+	//----------------------------------------------------------------------------------------------
+
+		// Medium ----------------------------------------------------------------------------------
+		@media #{$Medium-And-More}
+		{
+			// Transition Settings
+			#SiteLogo
+			{
+				transition-duration: .3s;
+				transition-timing-function: ease;
+				transition-property: width;
+
+				> h1
+				{
+					> a
+					{
+						> .Symbol
+						{
+							transition-duration: .3s;
+							transition-timing-function: ease;
+							transition-property: margin;
+							transform-origin: left;
+						}
+
+						> .Title
+						{
+							transition-duration: .3s;
+							transition-timing-function: ease;
+							transition-property: width, opacity;
+							transform-origin: left;
+						}
+					}
+				}
+			}
+			//
+
+			#SiteLogo.SideBarSwitched
+			{
+				width: $MinimizedSideBarWidth;
+
+				> h1
+				{
+					> a
+					{
+						> .Symbol
+						{
+							margin: 0;
+						}
+
+						> .Title
+						{
+							opacity: 0;
+							width: 0;
+						}
+					}
+				}
+			}
+		}
+
+		// Small-And-Less --------------------------------------------------------------------------
+		@media #{$Small-And-Less}
+		{
+		}

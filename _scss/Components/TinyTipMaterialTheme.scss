@@ -1,0 +1,49 @@
+// //--------------------------------------------------------------------------------------------------
+// //= TipsoMaterialTheme.scss
+// //--------------------------------------------------------------------------------------------------
+
+	.tinytip
+	{
+		@include Font(Caption);
+		background-color: Color(Gray, Darken2);
+		color: Color(White);
+		display: flex;
+		align-items: center;
+		padding: 0.8rem;
+		opacity: 0.9;
+		z-index: Z-Index(Tooltip);
+		border-radius: 0.2rem;
+		pointer-events: none;
+
+		&.tinytip-top
+		{
+			margin-bottom: 0.8rem;
+		}
+		&.tinytip-bottom
+		{
+			margin-top: 0.8rem;
+		}
+		&.tinytip-left
+		{
+			margin-right: 0.8rem;
+		}
+		&.tinytip-right
+		{
+			margin-left: 0.8rem;
+		}
+
+		&.tinytip-sidenav:not(.SideBarSwitched)
+		{
+			display: none;
+		}
+
+		&.tinytip-fixed
+		{
+			position: fixed !important;
+		}
+
+		@media #{$Small-And-Less}
+		{
+			display: none !important;
+		}
+	}

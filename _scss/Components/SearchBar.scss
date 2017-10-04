@@ -1,0 +1,82 @@
+//--------------------------------------------------------------------------------------------------
+//= SearchBar.scss
+//--------------------------------------------------------------------------------------------------
+
+	#SearchBar
+	{
+		position: absolute;
+		width: calc(#{$GlobalHeaderWidth} - #{$SideBarWidth});
+		height: $GlobalHeaderHeight;
+		top: 0;
+		right: 0;
+		margin-top: -$GlobalHeaderHeight;
+		background: Color(White);
+		padding: 0.8rem;
+		box-sizing: border-box;
+		transition: margin-top .3s ease;
+
+		@media #{$Small-And-Less}
+		{
+			width: 100%;
+			height: $GlobalHeaderHeightSmall;
+			margin-top: -$GlobalHeaderHeightSmall;
+		}
+
+		&.SearchBarSwitched
+		{
+			margin-top: 0;
+		}
+
+		&:after
+		{
+			@extend .mdi;
+			content: "\f349";
+			display: flex;
+			position: absolute;
+			top: 50%;
+			left: 1.6rem;
+			color: Color(Gray);
+			transform: translateY(-50%);
+		}
+
+		> form
+		{
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			> input
+			{
+				@include Font(Menu);
+				width: 100%;
+				height: 100%;
+				border: none;
+				box-sizing: border-box;
+				outline: none;
+				background-color: Color(White);
+				transition: box-shadow .3s, background-color .3s;
+				padding: 0 4.8rem 0 4rem;
+			}
+		}
+
+		> .Close
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			width: 4.8rem;
+			height: 4.8rem;
+			position: absolute;
+			top: 50%;
+			right: 0.8rem;
+			transform: translateY(-50%);
+			color: Color(Gray);
+			transition: color .3s;
+
+			&:hover
+			{
+				color: Color(Gray, Darken1);
+			}
+		}
+	}

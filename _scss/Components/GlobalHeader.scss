@@ -1,0 +1,165 @@
+//--------------------------------------------------------------------------------------------------
+//= GlobalHeader.scss
+//--------------------------------------------------------------------------------------------------
+
+	#GlobalHeader
+	{
+		position: fixed;
+		z-index: 200;
+		top: 0;
+		left: 0;
+		display: flex;
+		background-color: Color(White, Base);
+		width: $GlobalHeaderWidth;
+		height: $GlobalHeaderHeight;
+		z-index: Z-Index(GlobalHeader);
+
+		> #GlobalNav
+		{
+			width: calc(#{$GlobalHeaderWidth} - #{$SideBarWidth});
+
+			@media #{$Medium-And-More}
+			{
+				padding: 0 1.6rem;
+				box-sizing: border-box;
+			}
+
+			> ul
+			{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+
+				> li
+				{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: $GlobalHeaderHeight;
+					height: 100%;
+
+					@media #{$Small-And-Less}
+					{
+						width: $GlobalHeaderHeightSmall;
+						height: 100%;
+					}
+
+					> a
+					{
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						height: 100%;
+						text-decoration: none;
+						color: Color(Gray, Base);
+
+						@media #{$Small-And-Less}
+						{
+							width: 100%;
+							height: 100%;
+						}
+
+						&:hover
+						{
+							color: Color(Gray, Darken1);
+						}
+
+						i
+						{
+							pointer-events: none;
+						}
+					}
+				}
+
+				> li.ProjectSelect
+				{
+					@include Font(Menu);
+					margin-left: auto;
+					overflow: visible;
+				}
+
+				> li.User
+				{
+					> a
+					{
+						>img
+						{
+							max-width: 3.2rem;
+							max-height: 3.2rem;
+							pointer-events: none;
+						}
+					}
+				}
+
+				> li.Search
+				{
+					@media #{$Small-And-Less}
+					{
+						margin-left: auto;
+					}
+				}
+
+
+			}
+
+			@media #{$Small-And-Less}
+			{
+				width: 100%;
+			}
+		}
+
+		@media #{$Small-And-Less}
+		{
+			width: $GlobalHeaderWidthSmall;
+			height: $GlobalHeaderHeightSmall;
+		}
+	}
+
+	//----------------------------------------------------------------------------------------------
+	//= SwitchedSideBar
+	//----------------------------------------------------------------------------------------------
+
+		// Medium ----------------------------------------------------------------------------------
+		@media #{$Medium-And-More}
+		{
+			// Transition Settings
+			#GlobalHeader
+			{
+				> #GlobalNav
+				{
+					transition-duration: .3s;
+					transition-timing-function: ease;
+					transition-property: width;
+				}
+			}
+			//
+
+			#GlobalHeader.SideBarSwitched
+			{
+				> #GlobalNav
+				{
+					width: calc(#{$GlobalHeaderWidth} - #{$MinimizedSideBarWidth});
+				}
+			}
+		}
+
+		// Small-And-Less --------------------------------------------------------------------------
+		@media #{$Small-And-Less}
+		{
+			// Transition Settings
+			#GlobalHeader
+			{
+				transition-duration: .3s;
+				transition-timing-function: ease;
+				transition-property: margin-left;
+			}
+			//
+			#GlobalHeader.SideBarSwitched
+			{
+				margin-left: $SideBarWidth;
+			}
+		}

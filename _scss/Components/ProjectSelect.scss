@@ -1,0 +1,81 @@
+//--------------------------------------------------------------------------------------------------
+//= ProjectSelect.scss
+//--------------------------------------------------------------------------------------------------
+
+	#GlobalHeader
+	{
+		> #GlobalNav
+		{
+			> ul
+			{
+				> li.ProjectSelect
+				{
+					margin-top: 0;
+					margin-bottom: 0;
+					width: 20rem;
+
+					// Original Selectbox
+					> select.CreateChosen
+					{
+						position: absolute;
+						width: 100%;
+						bottom: 0.8rem;
+						left: 0;
+
+						& + label
+						{
+							top: 0.8rem;
+							transform: none;
+						}
+					}
+
+					// Container
+					>.chosen-container.chosen-container-single
+					{
+						@include Font(Caption);
+						border: none;
+						padding: 0;
+						width: 100%;
+
+						// Selectbox
+						> .chosen-single
+						{
+							@extend .Ripple;
+
+							height: $GlobalHeaderHeight;
+
+							@media #{$Small-And-Less}
+							{
+								height: $GlobalHeaderHeightSmall;
+							}
+
+							> span
+							{
+								margin-left: 0.8rem;
+								pointer-events: none;
+							}
+
+							> div
+							{
+								pointer-events: none;
+							}
+						}
+
+						// Dropdown
+						> .chosen-drop
+						{
+							width: 150%;
+							top: 100%;
+
+							> .chosen-results
+							{
+								box-sizing: border-box;
+								max-height: calc(100vh - #{$GlobalHeaderHeight} - #{$ChosenSearchInputHeight} - (#{$ChosenSearchBarPadding} * 2) - 1.6rem);
+							}
+						}
+					}
+
+				}
+			}
+		}
+	}

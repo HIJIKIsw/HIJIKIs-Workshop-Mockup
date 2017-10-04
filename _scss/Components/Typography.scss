@@ -1,0 +1,179 @@
+//--------------------------------------------------------------------------------------------------
+//= Typography.scss
+//--------------------------------------------------------------------------------------------------
+
+	//----------------------------------------------------------------------------------------------
+	//= Fonts
+	//----------------------------------------------------------------------------------------------
+		$Fonts:
+		(
+			Sizes:
+			(
+				Display4:		11.2rem,
+				Display3:		5.6rem,
+				Display2:		4.5rem,
+				Display1:		3.4rem,
+				Headline:		2.4rem,
+				Title:			2.1rem,
+				Subheading2:	1.6rem,
+				Subheading1:	1.6rem,
+				Body2:			1.4rem,
+				Body1:			1.4rem,
+				Caption:		1.3rem,
+				Menu:			1.4rem,//(none)
+				Button:			1.5rem,
+			),
+
+			Weights:
+			(
+				Display4:		300,
+				Display3:		400,
+				Display2:		400,
+				Display1:		400,
+				Headline:		400,
+				Title:			500,
+				Subheading2:	400,
+				Subheading1:	400,
+				Body2:			500,
+				Body1:			400,
+				Caption:		400,
+				Menu:			400,//(none)
+				Button:			500,
+			),
+
+			LineHeights:
+			(
+				Display4:		1.15,//(none)
+				Display3:		1.15,//(none)
+				Display2:		6.3rem,
+				Display1:		4.8rem,
+				Headline:		3.4rem,
+				Title:			1.15,//(none)
+				Subheading2:	3.0rem,
+				Subheading1:	2.6rem,
+				Body2:			2.6rem,
+				Body1:			2.3rem,
+				Caption:		1.15,//(none)
+				Menu:			1.15,//(none)
+				Button:			1.15,//(none)
+			),
+
+			Colors:
+			(
+				Display4:		rgba(0,0,0,0.54),
+				Display3:		rgba(0,0,0,0.54),
+				Display2:		rgba(0,0,0,0.54),
+				Display1:		rgba(0,0,0,0.54),
+				Headline:		rgba(0,0,0,0.87),
+				Title:			rgba(0,0,0,0.87),
+				Subheading2:	rgba(0,0,0,0.87),
+				Subheading1:	rgba(0,0,0,0.87),
+				Body2:			rgba(0,0,0,0.87),
+				Body1:			rgba(0,0,0,0.87),
+				Caption:		rgba(0,0,0,0.54),
+				Menu:			rgba(0,0,0,0.87),
+				Button:			rgba(0,0,0,0.87),
+			),
+		);
+
+		@mixin Font($_type)
+		{
+			$FontSizes: map-get($Fonts, Sizes);
+			$FontWeight: map-get($Fonts, Weights);
+			$LineHeights: map-get($Fonts, LineHeights);
+			$FontColors: map-get($Fonts, Colors);
+			@if map-has-key($FontSizes, $_type)
+			{
+				font-size: map-get($FontSizes, $_type);
+			}
+			@if map-has-key($FontWeight, $_type)
+			{
+				font-weight: map-get($FontWeight, $_type);
+			}
+			@if map-has-key($LineHeights, $_type)
+			{
+				line-height: map-get($LineHeights, $_type);
+			}
+			@if map-has-key($FontColors, $_type)
+			{
+				color: map-get($FontColors, $_type);
+			}
+		}
+
+	//----------------------------------------------------------------------------------------------
+	//= Headlines
+	//----------------------------------------------------------------------------------------------
+		#PageContainer
+		{
+			@include Font(Body1);
+
+			.Headlines
+			{
+				margin: 2.4rem 0 1.6rem 0;
+				padding: 0.4em;
+				padding-left: 0.8em;
+			}
+
+
+			@for $i from 1 through 6
+			{
+				h#{$i}
+				{
+					@extend .Headlines;
+
+					@media #{$Medium-And-More}
+					{
+						margin-left: #{$i - 1}rem;
+					}
+				}
+
+				.Level#{$i}
+				{
+					@media #{$Medium-And-More}
+					{
+						margin-left: #{$i}rem;
+					}
+				}
+			}
+
+			h1
+			{
+				@include Font(Title);
+				border-bottom: 0.1rem solid Color(White, Darken4);
+
+				&:first-of-type
+				{
+					margin-top: 0;
+				}
+			}
+
+			h2
+			{
+				@include Font(Title);
+				border-bottom: 0.1rem solid Color(White, Darken2);
+			}
+
+			h3
+			{
+				@include Font(Subheading2);
+				border-left: 0.4rem solid Color(White, Darken2);
+			}
+
+			h4
+			{
+				@include Font(Subheading1);
+				border-left: 0.1rem solid Color(White, Darken2);
+			}
+
+			h5, h6
+			{
+				@include Font(Body2);
+			}
+
+			// ul, ol
+			// {
+			// 	margin: 0;
+			// 	padding-left: 1.3em;
+			// }
+		}
+
