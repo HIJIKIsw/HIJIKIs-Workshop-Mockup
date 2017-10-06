@@ -15,6 +15,14 @@
 		box-sizing: border-box;
 		transition: margin-top .3s ease;
 
+		@media #{$Medium-And-More}
+		{
+			&.SideBarSwitched
+			{
+				width: calc(#{$GlobalHeaderWidth} - #{$MinimizedSideBarWidth});
+			}
+		}
+
 		@media #{$Small-And-Less}
 		{
 			width: 100%;

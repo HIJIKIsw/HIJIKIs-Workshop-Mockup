@@ -168,6 +168,12 @@ body {
 p, span {
   word-break: break-all; }
 
+a {
+  color: #2F76A5;
+  text-decoration: none; }
+  a:hover {
+    color: #005790; }
+
 #NoScript {
   font-size: 1.3rem;
   font-weight: 400;
@@ -655,6 +661,9 @@ p, span {
   padding: 0.8rem;
   box-sizing: border-box;
   transition: margin-top .3s ease; }
+  @media screen and (min-width: 641px) {
+    #SearchBar.SideBarSwitched {
+      width: calc(100% - 6.4rem); } }
   @media screen and (max-width: 640px) {
     #SearchBar {
       width: 100%;

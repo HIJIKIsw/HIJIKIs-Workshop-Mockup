@@ -5,30 +5,30 @@
 	@charset "UTF-8";
 
 	// Constants
-	@import "Components/Const_Colors";
-	@import "Components/Const_Layout";
+	@import "CommonComponents/Const_Colors";
+	@import "CommonComponents/Const_Layout";
 
 	// Components
-	@import "Components/Typography";
-	@import "Components/Common";
-	@import "Components/Card";
-	@import "Components/Button";
-	@import "Components/Input";
-	@import "Components/GlobalHeader";
-	@import "Components/SiteLogo";
-	@import "Components/SearchBar";
-	@import "Components/SideBar";
-	@import "Components/MainContainer";
-	@import "Components/TabBar";
-	@import "Components/ActionBar";
-	@import "Components/Breadcrumb";
-	@import "Components/PageName";
-	@import "Components/PageContainer";
-	@import "Components/Shade";
-	@import "Components/ChosenMaterialTheme";
-	@import "Components/ProjectSelect";
-	@import "Components/RippleEffect";
-	@import "Components/TinyTipMaterialTheme";
+	@import "CommonComponents/Typography";
+	@import "CommonComponents/Common";
+	@import "CommonComponents/Card";
+	@import "CommonComponents/Button";
+	@import "CommonComponents/Input";
+	@import "CommonComponents/GlobalHeader";
+	@import "CommonComponents/SiteLogo";
+	@import "CommonComponents/SearchBar";
+	@import "CommonComponents/SideBar";
+	@import "CommonComponents/MainContainer";
+	@import "CommonComponents/TabBar";
+	@import "CommonComponents/ActionBar";
+	@import "CommonComponents/Breadcrumb";
+	@import "CommonComponents/PageName";
+	@import "CommonComponents/PageContainer";
+	@import "CommonComponents/Shade";
+	@import "CommonComponents/ChosenMaterialTheme";
+	@import "CommonComponents/ProjectSelect";
+	@import "CommonComponents/RippleEffect";
+	@import "CommonComponents/TinyTipMaterialTheme";
 
 //--------------------------------------------------------------------------------------------------
 //= Test Codes

@@ -10,6 +10,7 @@
 		SideBarIsSwitched = true;
 		$('#GlobalHeader').addClass(SideBarSwitchClassName);
 		$('#SiteLogo').addClass(SideBarSwitchClassName);
+		$('#SearchBar').addClass(SideBarSwitchClassName);
 		$('#SideBar').addClass(SideBarSwitchClassName);
 		$('#MainContainer').addClass(SideBarSwitchClassName);
 		$('.tinytip-sidenav').addClass(SideBarSwitchClassName);
@@ -34,6 +35,7 @@
 		SideBarIsSwitched = false;
 		$('#GlobalHeader').removeClass(SideBarSwitchClassName);
 		$('#SiteLogo').removeClass(SideBarSwitchClassName);
+		$('#SearchBar').removeClass(SideBarSwitchClassName);
 		$('#SideBar').removeClass(SideBarSwitchClassName);
 		$('#MainContainer').removeClass(SideBarSwitchClassName);
 		$('.tinytip-sidenav').removeClass(SideBarSwitchClassName);

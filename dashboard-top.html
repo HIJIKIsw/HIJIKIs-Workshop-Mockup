@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>トップページ | HIJIKI's Workshop</title>
+		<!-- Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="./lib/normalize/normalize.css">
+		<link rel="stylesheet" type="text/css" href="./lib/MaterialDesign-Webfont/css/materialdesignicons.min.css">
+		<link rel="stylesheet" type="text/css" href="./lib/chosen/chosen.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/Workshop.css">
+		<!-- /Stylesheet -->
+	</head>
+
+	<body>
+		<div id="Wrapper">
+			<header id="GlobalHeader" class="Material Z-Depth-2">
+				<section id="SiteLogo">
+					<h1>
+						<a href="#" class="Ripple-White">
+							<span class="Img Symbol"></span>
+							<span class="Img Title"></span>
+						</a>
+					</h1>
+				</section>
+				<nav id="GlobalNav">
+					<ul>
+						<li class="ToggleSideBar"><a href="javascript:SideBarSwitchToggle();" class="Tooltip-Bottom Ripple" data-tooltip="サイドバー表示切り替え" data-fixed><i class="mdi mdi-menu"></i></a></li>
+						<li class="DashBoard"><a href="./dashboard-top.html" class="Tooltip-Bottom Ripple" data-tooltip="ダッシュボード" data-fixed><i class="mdi mdi-view-dashboard"></i></a></li>
+						<li class="Projects"><a href="./projects-list.html" class="Tooltip-Bottom Ripple" data-tooltip="プロジェクト" data-fixed><i class="mdi mdi-folder"></i></a></li>
+						<li class="AdminMenu"><a href="./admin-menu-settings.html" class="Tooltip-Bottom Ripple" data-tooltip="管理者メニュー" data-fixed><i class="mdi mdi-security"></i></a></li>
+						<li class="ProjectSelect Medium SelectboxContainer">
+							<select name="ProjectSelect" size="1" class="CreateChosen" data-placeholder="プロジェクトへ移動...">
+								<option></option>
+								<option value="0">プロジェクト名</option>
+								<option value="1">プロジェクト名</option>
+								<option value="2">プロジェクト名</option>
+								<option value="3">プロジェクト名</option>
+								<option value="4">プロジェクト名</option>
+								<option value="5">プロジェクト名</option>
+								<option value="6">Rockman vs SmashBros</option>
+								<option value="7">非公開アカウント管理</option>
+								<option value="8">NewWorkshop</option>
+								<option value="9">公開資料</option>
+								<option value="10">プロジェクト名が長く長く長くなっても大丈夫か検証してます</option>
+								<option value="11">プロジェクト名がもっともっともっと長く長く長く長く長く長く長く長く長く長く長く長くなっても大丈夫か検証してます。ぶっちゃけここまで長くすることはないだろうけど堅牢性的にこのぐらいしておかないとだめなんです。</option>
+							</select>
+							<label>プロジェクトへ移動...</label>
+						</li>
+						<li class="Search"><a href="javascript:SearchBarSwitchToggle();" class="Tooltip-Bottom Ripple" data-tooltip="Workshop 内を検索" data-fixed><i class="mdi mdi-magnify"></i></a></li>
+						<li class="User"><a href="#" class="Tooltip-Bottom Ripple" data-tooltip="あなた" data-fixed><img src="./img/mysymbol.png" alt="あなた"></a></li>
+					</ul>
+				</nav>
+				<section id="SearchBar">
+					<form action="/" method="get" accept-charset="utf-8" autocomplete="off">
+						<input type="search" name="Search" placeholder="Workshop 内を検索" autocomplete="off">
+					</form>
+					<a href="javascript:SearchBarSwitchOff();" class="Close mdi mdi-close"></a>
+				</section>
+			</header>
+			<section id="SideBar">
+				<div id="SideNav">
+					<ul>
+						<li class="Active"><a href="./dashboard-top.html" class="Tooltip-Right Ripple-White" data-tooltip="トップページ" data-sidenav data-fixed><i class="mdi mdi-home"></i><span>トップページ</span></a></li>
+						<li><a href="./dashboard-activity.html" class="Tooltip-Right Ripple-White" data-tooltip="アクティビティ" data-sidenav data-fixed><i class="mdi mdi-radar"></i><span>アクティビティ</span></a></li>
+						<li><a href="./dashboard-tasks.html" class="Tooltip-Right Ripple-White" data-tooltip="タスク" data-sidenav data-fixed><i class="mdi mdi-format-list-checks"></i><span>タスク</span></a></li>
+					</ul>
+				</div>
+			</section>
+			<section id="MainContainer">
+				<header id="MainHeader">
+					<h1 id="SectionName">ダッシュボード</h1>
+				</header>
+				<section id="Breadcrumb">
+					<ul>
+						<li><a href="./">Workshop</a></li>
+						<li><a href="./dashboard-top.html">ダッシュボード</a></li>
+					</ul>
+				</section>
+				<section id="PageName">
+					<h1>トップページ</h1>
+				</section>
+				<section id="PageContainer">
+					<div class="Row">
+						<div class="Column-12">
+							<div class="Card">
+								<h1>トップページ</h1>
+								<h2>HIJIKI's Workshop へようこそ</h2>
+								<div class="Level2">
+									<p>HIJIKI's Workshop は初めてですか？</p>
+									<p><a href="#">こちら</a> から、各種機能のチュートリアルを見てみましょう</p>
+								</div>
+								<h2>お知らせ</h2>
+								<div class="Level2">
+									<p></p>
+								</div>
+								<h3>現在、試運転中</h3>
+								<div class="Level3">
+									<p>
+										HIJIKI's Workshop は現在、試運転中です。<br>
+										不具合の報告や要望などを <a href="#">こちらのフォーム</a> より送信できます。
+									</p>
+									<p>─ 管理者 2017/10/05 22:30</p>
+								</div>
+								<h3>表示 / 非表示機能を追加</h3>
+								<div class="Level3">
+									<p>
+										Wiki ページの一部を、ボタン操作で 表示 または 非表示 できる機能を追加しました。<br>
+										詳しくは <a href="#">表示 / 非表示 機能について</a> を参照してください。
+									</p>
+									<p>─ 管理者 2017/10/05 22:01</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<!-- Utility -->
+		<div id="MediaQuery"></div>
+		<div id="Shade"></div>
+		<noscript>
+			<article id="NoScript">
+				<p>ご利用のブラウザは、JavaScript が有効でないか非対応です。</p>
+				<p>このページは、JavaScript が有効のブラウザでのみ正しくご利用いただけます。</p>
+			</article>
+		</noscript>
+		<!-- /Utility -->
+		<!-- JavaScript -->
+		<script defer charset="UTF-8" src="./lib/jQuery/jquery-3.2.1.min.js"></script>
+		<script defer charset="UTF-8" src="./lib/jQuery-Touch-Events/jquery.mobile-events.min.js"></script>
+		<script defer charset="UTF-8" src="./lib/chosen/chosen.jquery.min.js"></script>
+		<script defer charset="UTF-8" src="./lib/TinyTip.js/tinytip.custom.js"></script>
+		<script defer charset="UTF-8" src="./lib/scroll-scope/scroll-scope.min.js"></script>
+		<script defer charset="UTF-8" src="./js/MediaQuery.js"></script>
+		<script defer charset="UTF-8" src="./js/InputStylingHelper.js"></script>
+		<script defer charset="UTF-8" src="./js/SideBarController.js"></script>
+		<script defer charset="UTF-8" src="./js/SearchBarController.js"></script>
+		<script defer charset="UTF-8" src="./js/ScrollScopeController.js"></script>
+		<script defer charset="UTF-8" src="./js/ChosenController.js"></script>
+		<script defer charset="UTF-8" src="./js/TinyTipController.js"></script>
+		<!-- /JavaScript -->
+	</body>
+</html>

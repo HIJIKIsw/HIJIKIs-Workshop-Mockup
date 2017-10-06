@@ -25,6 +25,17 @@
 		word-break: break-all;
 	}
 
+	a
+	{
+		color: Color(Blue, Lighten1);
+		text-decoration: none;
+
+		&:hover
+		{
+			color: Color(Blue);
+		}
+	}
+
 	#NoScript
 	{
 		@include Font(Caption);
