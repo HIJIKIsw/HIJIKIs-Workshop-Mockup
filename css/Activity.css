@@ -1,0 +1,11 @@
+#Activity ul {
+  margin: 0;
+  padding-left: 1.3em; }
+  #Activity ul li > aside {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.15;
+    color: rgba(0, 0, 0, 0.54);
+    display: inline; }
+
+/*# sourceMappingURL=Activity.css.map */

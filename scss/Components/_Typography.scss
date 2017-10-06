@@ -1,0 +1,75 @@
+//--------------------------------------------------------------------------------------------------
+//= Typography.scss
+//--------------------------------------------------------------------------------------------------
+
+	//----------------------------------------------------------------------------------------------
+	//= Headlines
+	//----------------------------------------------------------------------------------------------
+		#PageContainer
+		{
+			@include Font(Body1);
+
+			.Headlines
+			{
+				margin: 2.4rem 0 1.6rem 0;
+				padding: 0.4em;
+				padding-left: 0.8em;
+			}
+
+
+			@for $i from 1 through 6
+			{
+				h#{$i}
+				{
+					@extend .Headlines;
+
+					@media #{$Medium-And-More}
+					{
+						margin-left: #{$i - 1}rem;
+					}
+				}
+
+				.Level#{$i}
+				{
+					@media #{$Medium-And-More}
+					{
+						margin-left: #{$i}rem;
+					}
+				}
+			}
+
+			h1
+			{
+				@include Font(Title);
+				border-bottom: 0.1rem solid Color(White, Darken4);
+
+				&:first-of-type
+				{
+					margin-top: 0;
+				}
+			}
+
+			h2
+			{
+				@include Font(Title);
+				border-bottom: 0.1rem solid Color(White, Darken2);
+			}
+
+			h3
+			{
+				@include Font(Subheading2);
+				border-left: 0.4rem solid Color(White, Darken2);
+			}
+
+			h4
+			{
+				@include Font(Subheading1);
+				border-left: 0.1rem solid Color(White, Darken2);
+			}
+
+			h5, h6
+			{
+				@include Font(Body2);
+			}
+		}
+

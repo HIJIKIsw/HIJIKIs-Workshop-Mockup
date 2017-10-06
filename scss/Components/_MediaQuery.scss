@@ -1,0 +1,25 @@
+//--------------------------------------------------------------------------------------------------
+//= Components / MediaQuery.scss
+//--------------------------------------------------------------------------------------------------
+
+	#MediaQuery
+	{
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	}
+
+	@media #{$Medium-And-More}
+	{
+		#MediaQuery
+		{
+			font-family: 'Medium';												// content では IE で正常に取得できないためやむを得ず font-family を利用する
+		}
+	}
+	@media #{$Small-And-Less}
+	{
+		#MediaQuery
+		{
+			font-family: 'Small';												// content では IE で正常に取得できないためやむを得ず font-family を利用する
+		}
+	}

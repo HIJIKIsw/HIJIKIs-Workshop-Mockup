@@ -1,4 +1,20 @@
 //--------------------------------------------------------------------------------------------------
-//= Definition / Colors.scss
+//= Activity.scss
 //--------------------------------------------------------------------------------------------------
 
+	@import "Definition/Fonts";
+
+	#Activity
+	{
+		ul
+		{
+			margin: 0;
+			padding-left: 1.3em;
+
+			li > aside
+			{
+				@include Font(Caption);
+				display: inline;
+			}
+		}
+	}

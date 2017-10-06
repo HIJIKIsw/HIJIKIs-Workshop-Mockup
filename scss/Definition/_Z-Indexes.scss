@@ -1,0 +1,27 @@
+//----------------------------------------------------------------------------------------------
+//= Definition / _Z-Indexes.scss
+//----------------------------------------------------------------------------------------------
+	
+	$Z-Indexes:
+	(
+		MainContainer:				100,
+		SideBar:					1000,
+		GlobalHeader:				10000,
+		SiteLogo:					10000,
+		Shade:						50000,
+		ChosenDropdown:				100000,
+		Tooltip:					150000,
+		RippleEffect:				500000,
+		NoScript:					999999,
+	);
+
+	@function Z-Index($_type)
+	{
+		@if map-has-key($Z-Indexes, $_type)
+		{
+			@return map-get($Z-Indexes, $_type);
+		}
+
+		@error "Unknown `#{$_type}` in $Z-Indexes.";
+		@return null;
+	}

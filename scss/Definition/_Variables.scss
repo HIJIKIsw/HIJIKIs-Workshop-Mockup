@@ -1,0 +1,28 @@
+//--------------------------------------------------------------------------------------------------
+//= Definition / _Variables.scss
+//--------------------------------------------------------------------------------------------------
+
+	//----------------------------------------------------------------------------------------------
+	//= GlobalHeader
+	//----------------------------------------------------------------------------------------------
+		$GlobalHeaderWidth: 100% !default;															// グローバルヘッダーの幅 Medium 以上
+		$GlobalHeaderHeight: 6.4rem !default;														// グローバルヘッダーの高さ Medium 以上
+		$GlobalHeaderWidthSmall: 100% !default;														// グローバルヘッダーの幅 Small 以下
+		$GlobalHeaderHeightSmall: 5.6rem !default;													// グローバルヘッダーの高さ Small 以下
+
+	//----------------------------------------------------------------------------------------------
+	//= SideBar
+	//----------------------------------------------------------------------------------------------
+		$SideBarWidth: 24rem !default;																// サイドバーの幅 Medium 以上
+		$SideBarHeight: calc(100% - #{$GlobalHeaderHeight}) !default;								// サイドバーの高さ Medium 以上
+		$SideBarWidthSmall: 24rem !default;															// サイドバーの幅 Small 以下
+		$SideBarHeightSmall: calc(100% - #{$GlobalHeaderHeightSmall}) !default;						// サイドバーの高さ Small 以下
+		$MinimizedSideBarWidth: 6.4rem !default;													// 最小化中のサイドバーの幅 Medium 以上
+		$MinimizedSideBarHeight: calc(100% - #{$GlobalHeaderHeight}) !default;						// 最小化中のサイドバーの高さ Medium 以上
+
+	//----------------------------------------------------------------------------------------------
+	//= Responsive
+	//----------------------------------------------------------------------------------------------
+		$ResponsiveBreakPointWidth: 640px !default;													// レスポンシブデザインのブレイクポイント幅
+		$Small-And-Less: "screen and (max-width: #{$ResponsiveBreakPointWidth})" !default;			// レスポンシブデザイン Small 以下
+		$Medium-And-More: "screen and (min-width: #{$ResponsiveBreakPointWidth + 1})" !default;		// レスポンシブデザイン Medium 以上
