@@ -38,8 +38,7 @@
       #PageContainer.Tasks table > tbody > tr > td.Status > label {
         display: block;
         width: 100%;
-        height: 100%;
-        cursor: pointer; }
+        height: 100%; }
         #PageContainer.Tasks table > tbody > tr > td.Status > label:before {
           position: absolute;
           top: 0;
@@ -92,6 +91,13 @@
         top: -100%; }
       #PageContainer.Tasks table > tbody > tr > td.Status input.Task:checked + label:after {
         top: 0; }
+      #PageContainer.Tasks table > tbody > tr > td.Status input.Task:not([disabled]) + label {
+        cursor: pointer; }
+    #PageContainer.Tasks table > tbody > tr > td.Person:before {
+      content: "";
+      display: block;
+      width: 16rem;
+      height: 0; }
     #PageContainer.Tasks table > tbody > tr > td.Person > div {
       display: -webkit-box;
       display: -webkit-flex;
@@ -100,10 +106,13 @@
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      width: 100%;
+      word-break: break-all; }
       #PageContainer.Tasks table > tbody > tr > td.Person > div > img {
         max-width: 2.4rem;
-        max-height: 2.4rem; }
+        max-height: 2.4rem;
+        margin-right: 0.8rem; }
   @media screen and (max-width: 640px) {
     #PageContainer.Tasks table {
       display: block;

@@ -62,7 +62,6 @@
 						display: block;
 						width: 100%;
 						height: 100%;
-						cursor: pointer;
 
 						&:before
 						{
@@ -109,19 +108,40 @@
 							top: 0;
 						}
 					}
+
+					input.Task:not([disabled])
+					{
+						+ label
+						{
+							cursor: pointer;
+						}
+					}
 				}
 
 				&.Person
 				{
+					// This is Instead min-width
+					&:before
+					{
+						content: "";
+						display: block;
+						width: 16rem;
+						height: 0;
+					}
+					//
+
 					> div
 					{
 						display: flex;
 						align-items: center;
+						width: 100%;
+						word-break: break-all;
 
 						> img
 						{
 							max-width: 2.4rem;
 							max-height: 2.4rem;
+							margin-right: 0.8rem;
 						}
 					}
 				}
