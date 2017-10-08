@@ -4,13 +4,13 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-		<title>参加プロジェクトのアクティビティ | HIJIKI's Workshop</title>
+		<title>あなたが担当している未完了タスク | HIJIKI's Workshop</title>
 		<!-- Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./lib/normalize/normalize.css">
 		<link rel="stylesheet" type="text/css" href="./lib/MaterialDesign-Webfont/css/materialdesignicons.min.css">
 		<link rel="stylesheet" type="text/css" href="./lib/chosen/chosen.min.css">
 		<link rel="stylesheet" type="text/css" href="./css/Common.css">
-		<link rel="stylesheet" type="text/css" href="./css/Activity.css">
+		<link rel="stylesheet" type="text/css" href="./css/Tasks.css">
 		<!-- /Stylesheet -->
 	</head>
 
@@ -50,7 +50,7 @@
 							<label>プロジェクトへ移動...</label>
 						</li>
 						<li class="Search"><a href="javascript:SearchBarSwitchToggle();" class="Tooltip-Bottom Ripple" data-tooltip="Workshop 内を検索" data-fixed><i class="mdi mdi-magnify"></i></a></li>
-						<li class="User"><a href="#" class="Tooltip-Bottom Ripple" data-tooltip="あなた" data-fixed><img src="./img/mysymbol.png"></a></li>
+						<li class="User"><a href="#" class="Tooltip-Bottom Ripple" data-tooltip="あなた" data-fixed><img src="./img/mysymbol.png" alt="あなた"></a></li>
 					</ul>
 				</nav>
 				<section id="SearchBar">
@@ -64,8 +64,8 @@
 				<div id="SideNav">
 					<ul>
 						<li><a href="./dashboard-top.html" class="Tooltip-Right Ripple-White" data-tooltip="トップページ" data-sidenav data-fixed><i class="mdi mdi-home"></i><span>トップページ</span></a></li>
-						<li class="Active"><a href="./dashboard-activity.html" class="Tooltip-Right Ripple-White" data-tooltip="アクティビティ" data-sidenav data-fixed><i class="mdi mdi-radar"></i><span>アクティビティ</span></a></li>
-						<li><a href="./dashboard-tasks.html" class="Tooltip-Right Ripple-White" data-tooltip="タスク" data-sidenav data-fixed><i class="mdi mdi-format-list-checks"></i><span>タスク</span></a></li>
+						<li><a href="./dashboard-activity.html" class="Tooltip-Right Ripple-White" data-tooltip="アクティビティ" data-sidenav data-fixed><i class="mdi mdi-radar"></i><span>アクティビティ</span></a></li>
+						<li class="Active"><a href="./dashboard-tasks.html" class="Tooltip-Right Ripple-White" data-tooltip="タスク" data-sidenav data-fixed><i class="mdi mdi-format-list-checks"></i><span>タスク</span></a></li>
 					</ul>
 				</div>
 			</section>
@@ -80,20 +80,33 @@
 					</ul>
 				</section>
 				<section id="PageName">
-					<h1>参加プロジェクトのアクティビティ</h1>
+					<h1>あなたが担当している未完了タスク</h1>
 				</section>
-				<section id="PageContainer" class="Activity">
+				<section id="PageContainer" class="Tasks">
 					<div class="Row">
 						<div class="Column-12">
 							<div class="Card">
-								<h1>2017/08/08</h1>
+								<h1>プロジェクト名</h1>
 								<div class="Level1">
-									<ul>
-										<li><a href="./project-overview.html">プロジェクト名</a> - 新規タスクを作成: <a href="#">#1234 このプロジェクトの名称を決める</a> <aside>by HIJIKIsw 2017/08/08 12:12</aside></li>
-										<li><a href="./project-overview.html">プロジェクト名</a> - タスクを完了: <a href="#">#2345 Wiki のトップページを執筆する</a> <aside>by HIJIKIsw 2017/08/08 10:05</aside></li>
-										<li><a href="./project-overview.html">Rockman vs SmashBros</a> - タスク完了を取消: <a href="#">#2525 チャージショットを実装する</a> <aside>by HIJIKIsw 2017/08/08 10:05</aside></li>
-										<li><a href="./project-overview.html">Rockman vs SmashBros</a> - タスク削除: <a href="#">#6699 ミニゲームを作成する</a> <aside>by HIJIKIsw 2017/08/08 10:05</aside></li>
-									</ul>
+									<table>
+										<caption>カテゴリ名</caption>
+										<thead>
+											<tr>
+												<th class="Status">ステータス</th>
+												<th class="ID">ID</th>
+												<th class="TaskName">タスク名</th>
+												<th class="Person">担当者</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="Status"><input id="1234" class="Task" type="checkbox"><label for="1234"></label></td>
+												<td class="ID">#1234</td>
+												<td class="TaskName">このプロジェクトの名称を決める</td>
+												<td class="Person"><div><img src="./img/MySymbol.png">HIJIKIsw</div></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
@@ -101,28 +114,27 @@
 					<div class="Row">
 						<div class="Column-12">
 							<div class="Card">
-								<h1>2017/08/07</h1>
+								<h1>Rockman vs SmashBros</h1>
 								<div class="Level1">
-									<ul>
-										<li><a href="./project-overview.html">プロジェクト名</a> - 新規タスクを作成: <a href="#">#2345 Wiki のトップページを執筆する</a> <aside>by HIJIKIsw 2017/08/07 16:08</aside></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="Row">
-						<div class="Column-12">
-							<div class="Card">
-								<h1>2017/08/06</h1>
-								<div class="Level1">
-									<ul>
-										<li><a href="./project-overview.html">Mixer-Comment-Viewer</a> - 新規 Wiki ページを作成: <a href="#">プランニング</a> <aside>by HIJIKIsw 2017/08/06 13:24</aside></li>
-										<li><a href="./project-overview.html">Mixer-Comment-Viewer</a> - Wiki ページを編集: <a href="#">プロジェクトの概要</a> <aside>by HIJIKIsw 2017/08/06 12:20</aside></li>
-										<li><a href="./project-overview.html">Mixer-Comment-Viewer</a> - Wiki ページを削除: <a href="#" class="NotExist">その他の一時的な雑記</a> <aside>by HIJIKIsw 2017/08/06 11:48</aside></li>
-										<li><a href="./project-overview.html">Mixer-Comment-Viewer</a> - 新規ファイルをアップロード: <a href="#">new_icon.png</a> <aside>by HIJIKIsw 2017/08/06 09:12</aside></li>
-										<li><a href="./project-overview.html">Mixer-Comment-Viewer</a> - ファイルを更新: <a href="#">background.png</a> <aside>by HIJIKIsw 2017/08/06 08:10</aside></li>
-										<li><a href="./project-overview.html">Mixer-Comment-Viewer</a> - ファイルを削除: <a href="#" class="NotExist">icon.png</a> <aside>by HIJIKIsw 2017/08/06 08:02</aside></li>
-									</ul>
+									<table>
+										<caption>動作に関するタスク</caption>
+										<thead>
+											<tr>
+												<th class="Status">ステータス</th>
+												<th class="ID">ID</th>
+												<th class="TaskName">タスク名</th>
+												<th class="Person">担当者</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="Status"><input id="2525" class="Task" type="checkbox"><label for="2525"></label></td>
+												<td class="ID">#2525</td>
+												<td class="TaskName">チャージショットを実装する</td>
+												<td class="Person"><div><img src="./img/MySymbol.png">HIJIKIsw</div></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>

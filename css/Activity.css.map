@@ -1,1 +1,1 @@
-{"version":3,"sources":["..\\scss\\Activity.scss","..\\scss\\Definition\\_Fonts.scss"],"names":[],"mappings":"AAMC;EAIE,UAAS;EACT,oBAAmB,EAOnB;EAZF;IC6EE,kBAjEgB;IAqEhB,iBApDa;IAwDb,kBAvCc;IA2Cd,2BA1B0B;IDrDzB,gBAAe,EACf"}
+{"version":3,"sources":["..\\scss\\Activity.scss","..\\scss\\Definition\\_Colors.scss","..\\scss\\Definition\\_Fonts.scss"],"names":[],"mappings":"AAQC;EAIE,sBAAqB;EACrB,iBAAgB;EAChB,WAAU,EAaV;EAnBF;IAUG,oCCRe;IDSf,kBAAiB,EAOjB;IAlBH;ME2EE,kBAjEgB;MAqEhB,iBApDa;MAwDb,kBAvCc;MA2Cd,2BA1B0B;MF7CxB,gBAAe,EACf"}

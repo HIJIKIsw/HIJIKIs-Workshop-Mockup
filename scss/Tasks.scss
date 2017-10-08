@@ -1,0 +1,137 @@
+//--------------------------------------------------------------------------------------------------
+//= Tasks.scss
+//--------------------------------------------------------------------------------------------------
+
+	@import "Definition/Colors";
+	@import "Definition/Fonts";
+	@import "Definition/Variables";
+
+	#PageContainer.Tasks
+	{
+		table
+		{
+			border-collapse: separate;
+			border-spacing: 0;
+			width: 100%;
+
+			// Caption (Category)
+			> caption
+			{
+				@include Font(Title);
+				padding: 0.8rem;
+				text-align: left;
+			}
+
+			// Table Head
+			> thead > tr > th
+			{
+				border-bottom: 0.2rem solid Color(White, Darken2);
+				@include Font(Caption);
+				padding: 0.8rem;
+				text-align: left;
+				vertical-align: middle;
+
+				&.Status
+				{
+					width: 9.6rem;
+					//text-align: center;
+				}
+			}
+
+			// Table Body
+			> tbody > tr > td
+			{
+				@include Font(Body1);
+				padding: 0.8rem;
+				border-bottom: 0.1rem solid Color(White, Darken2);
+				vertical-align: middle;
+
+				&.Status
+				{
+					position: relative;
+					padding: 0;
+					overflow: hidden;
+
+					> input.Task
+					{
+						display: none;
+					}
+
+					> label
+					{
+						display: block;
+						width: 100%;
+						height: 100%;
+						cursor: pointer;
+
+						&:before
+						{
+							position: absolute;
+							top: 0;
+							left: 0;
+							display: flex;
+							content: "未完了";
+							color: Color(Red, Darken4);
+							align-items: center;
+							justify-content: center;
+							width: 100%;
+							height: 100%;
+							border-left: 0.8rem solid Color(Red, Darken4);
+							transition: top .3s ease;
+						}
+
+						&:after
+						{
+							position: absolute;
+							top: 100%;
+							left: 0;
+							display: flex;
+							content: "完了済";
+							color: Color(Green, Darken2);
+							align-items: center;
+							justify-content: center;
+							width: 100%;
+							height: 100%;
+							border-left: 0.8rem solid Color(Green, Darken2);
+							transition: top .3s ease;
+						}
+					}
+
+					input.Task:checked + label
+					{
+						&:before
+						{
+							top: -100%;
+						}
+
+						&:after
+						{
+							top: 0;
+						}
+					}
+				}
+
+				&.Person
+				{
+					> div
+					{
+						display: flex;
+						align-items: center;
+
+						> img
+						{
+							max-width: 2.4rem;
+							max-height: 2.4rem;
+						}
+					}
+				}
+			}
+
+			@media #{$Small-And-Less}
+			{
+				display: block;
+				overflow-x: auto;
+				white-space: nowrap;
+			}
+		}
+	}

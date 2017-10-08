@@ -19,6 +19,8 @@ a {
   text-decoration: none; }
   a:hover {
     color: #005790; }
+  a.NotExist {
+    color: #B71C1C; }
 
 #NoScript {
   font-size: 1.3rem;
@@ -163,6 +165,8 @@ a {
     font-weight: 500;
     line-height: 2.6rem;
     color: rgba(0, 0, 0, 0.87); }
+  #PageContainer p {
+    margin: 1.6rem 0; }
 
 .Card {
   background-color: #ffffff;
