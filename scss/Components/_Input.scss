@@ -219,6 +219,19 @@
 					color: Color(Blue);
 					content: "\f132";
 				}
+
+				&[disabled] + span
+				{
+					&:before
+					{
+						color: Color(White, Darken3);
+					}
+
+					&:active:after
+					{
+						opacity: 0;	
+					}
+				}
 			}
 		}
 		/**/

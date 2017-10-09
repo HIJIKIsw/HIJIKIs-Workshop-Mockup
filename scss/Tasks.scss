@@ -8,11 +8,19 @@
 
 	#PageContainer.Tasks
 	{
+		.TableWrapper
+		{
+			overflow-x: auto;
+		}
+
 		table
 		{
 			border-collapse: separate;
 			border-spacing: 0;
 			width: 100%;
+			min-width: 59.2rem;
+			margin-bottom: 1.6rem;
+			table-layout: fixed;
 
 			// Caption (Category)
 			> caption
@@ -30,11 +38,32 @@
 				padding: 0.8rem;
 				text-align: left;
 				vertical-align: middle;
+				font-weight: bold;
 
 				&.Status
 				{
+					width: 4.8rem;
+				}
+
+				&.ID
+				{
 					width: 9.6rem;
-					//text-align: center;
+				}
+
+				&.TaskName
+				{
+					min-width: 24rem;
+				}
+
+				&.Person
+				{
+					width: 16rem;
+				}
+
+				&.Menu
+				{
+					width: 3.2rem;
+					text-align: center;
 				}
 			}
 
@@ -48,88 +77,10 @@
 
 				&.Status
 				{
-					position: relative;
-					padding: 0;
-					overflow: hidden;
-
-					> input.Task
-					{
-						display: none;
-					}
-
-					> label
-					{
-						display: block;
-						width: 100%;
-						height: 100%;
-
-						&:before
-						{
-							position: absolute;
-							top: 0;
-							left: 0;
-							display: flex;
-							content: "未完了";
-							color: Color(Red, Darken4);
-							align-items: center;
-							justify-content: center;
-							width: 100%;
-							height: 100%;
-							border-left: 0.8rem solid Color(Red, Darken4);
-							transition: top .3s ease;
-						}
-
-						&:after
-						{
-							position: absolute;
-							top: 100%;
-							left: 0;
-							display: flex;
-							content: "完了済";
-							color: Color(Green, Darken2);
-							align-items: center;
-							justify-content: center;
-							width: 100%;
-							height: 100%;
-							border-left: 0.8rem solid Color(Green, Darken2);
-							transition: top .3s ease;
-						}
-					}
-
-					input.Task:checked + label
-					{
-						&:before
-						{
-							top: -100%;
-						}
-
-						&:after
-						{
-							top: 0;
-						}
-					}
-
-					input.Task:not([disabled])
-					{
-						+ label
-						{
-							cursor: pointer;
-						}
-					}
 				}
 
 				&.Person
 				{
-					// This is Instead min-width
-					&:before
-					{
-						content: "";
-						display: block;
-						width: 16rem;
-						height: 0;
-					}
-					//
-
 					> div
 					{
 						display: flex;
@@ -145,13 +96,13 @@
 						}
 					}
 				}
-			}
 
-			@media #{$Small-And-Less}
-			{
-				display: block;
-				overflow-x: auto;
-				white-space: nowrap;
+				&.Menu
+				{
+					@include Font(Caption);
+					width: 3.2rem;
+					text-align: center;
+				}
 			}
 		}
 	}

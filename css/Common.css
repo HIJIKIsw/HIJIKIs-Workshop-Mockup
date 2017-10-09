@@ -450,6 +450,10 @@ a {
   .CheckboxContainer > label > input[type=checkbox]:checked + span:before {
     color: #005790;
     content: "\f132"; }
+  .CheckboxContainer > label > input[type=checkbox][disabled] + span:before {
+    color: #e0e0e0; }
+  .CheckboxContainer > label > input[type=checkbox][disabled] + span:active:after {
+    opacity: 0; }
 
 /**/
 /**
