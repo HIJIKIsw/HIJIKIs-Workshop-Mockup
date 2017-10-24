@@ -9,9 +9,9 @@
 		{
 			@include Font(Body1);
 
-			.Headlines
+			%Headlines
 			{
-				margin: 2.4rem 0 1.6rem 0;
+				margin: 24px 0 16px 0;
 				padding: 0.4em;
 				padding-left: 0.8em;
 			}
@@ -21,11 +21,11 @@
 			{
 				h#{$i}
 				{
-					@extend .Headlines;
+					@extend %Headlines;
 
 					@media #{$Medium-And-More}
 					{
-						margin-left: #{$i - 1}rem;
+						margin-left: #{($i - 1) * 10}px;
 					}
 				}
 
@@ -33,7 +33,7 @@
 				{
 					@media #{$Medium-And-More}
 					{
-						margin-left: #{$i}rem;
+						margin-left: #{$i * 10}px;
 					}
 				}
 			}
@@ -41,7 +41,7 @@
 			h1
 			{
 				@include Font(Title);
-				border-bottom: 0.1rem solid Color(Grey, 400);
+				border-bottom: 1px solid Color(Grey, 400);
 
 				&:first-of-type
 				{
@@ -52,19 +52,19 @@
 			h2
 			{
 				@include Font(Title);
-				border-bottom: 0.1rem solid Color(Grey, 200);
+				border-bottom: 1px solid Color(Grey, 200);
 			}
 
 			h3
 			{
 				@include Font(Subheading2);
-				border-left: 0.4rem solid Color(Grey, 200);
+				border-left: 4px solid Color(Grey, 200);
 			}
 
 			h4
 			{
 				@include Font(Subheading1);
-				border-left: 0.1rem solid Color(Grey, 200);
+				border-left: 1px solid Color(Grey, 200);
 			}
 
 			h5, h6
@@ -74,7 +74,7 @@
 
 			p
 			{
-				margin: 1.6rem 0;
+				margin: 16px 0;
 			}
 		}
 

@@ -7,8 +7,6 @@
 	//----------------------------------------------------------------------------------------------
 		$SideBarWidth: 240px !default;																// サイドバーの幅 Medium 以上
 		$SideBarHeight: 100% !default;																// サイドバーの高さ Medium 以上
-		$SideBarWidthSmall: 240px !default;															// サイドバーの幅 Small 以下
-		$SideBarHeightSmall: 100% !default;															// サイドバーの高さ Small 以下
 		$MinimizedSideBarWidth: 64px !default;														// 最小化中のサイドバーの幅 Medium 以上
 		$MinimizedSideBarHeight: 100% !default;														// 最小化中のサイドバーの高さ Medium 以上
 
@@ -25,7 +23,7 @@
 	//----------------------------------------------------------------------------------------------
 		$SearchBarWidth: 100%;																		// 検索バーの幅 Medium 以上
 		$SearchBarHeight: $GlobalHeaderHeight;														// 検索バーの高さ Medium 以上
-		$SearchBarWidthSmall: $GlobalHeaderWidthSmall;												// 検索バーの幅 Small 以下
+		$SearchBarWidthSmall: 100%;																	// 検索バーの幅 Small 以下
 		$SearchBarHeightSmall: $GlobalHeaderHeightSmall;											// 検索バーの高さ Small 以下
 
 	//----------------------------------------------------------------------------------------------

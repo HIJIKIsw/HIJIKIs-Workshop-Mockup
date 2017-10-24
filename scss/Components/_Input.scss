@@ -180,7 +180,7 @@
 
 					&:before
 					{
-						@extend .mdi;
+						@extend .mdi-set;
 						position: absolute;
 						top: -0.1rem;
 						left: 0;
@@ -308,7 +308,7 @@
 
 					&:before
 					{
-						@extend .mdi;
+						@extend .mdi-set;
 						position: absolute;
 						top: -0.1rem;
 						left: 0;

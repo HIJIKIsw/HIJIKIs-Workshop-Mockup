@@ -10,13 +10,11 @@
 		@for $i from 1 through 12 {
 			.Column-#{$i}
 			{
-				//@extend %Columns;
 				width: calc(100% / 12 * #{$i});
 			}
 
 			.Column-Small-#{$i}
 			{
-				//@extend %Columns;
 				@media #{$Small-And-Less}
 				{
 					width: calc(100% / 12 * #{$i});

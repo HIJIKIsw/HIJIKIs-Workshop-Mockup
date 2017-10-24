@@ -5,7 +5,6 @@
 	#GlobalHeader
 	{
 		position: fixed;
-		z-index: 200;
 		top: 0;
 		left: 0;
 		margin-left: $SideBarWidth;
@@ -141,6 +140,7 @@
 				transition-property: width, height, margin-left;
 			}
 			//
+			
 			#GlobalHeader.SideBarSwitched
 			{
 				margin-left: $SideBarWidth;

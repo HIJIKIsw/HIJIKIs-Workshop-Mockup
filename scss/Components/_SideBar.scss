@@ -6,14 +6,18 @@
 	{
 		@extend .Z-Depth-2;
 		position: fixed;
-		z-index: 0;
 		top: 0;
-		overflow-y: auto;
 		left: 0;
+		overflow-y: auto;
 		background-color: Color(BlueGrey, 800);
 		width: $SideBarWidth;
 		height: $SideBarHeight;
 		z-index: Z-Index(SideBar);
+
+		@media #{$Small-And-Less}
+		{
+			margin-left: -$SideBarWidth;
+		}
 
 		> #SideNav
 		{
@@ -81,14 +85,6 @@
 					}
 				}
 			}
-		}
-
-		@media #{$Small-And-Less}
-		{
-			position: fixed;
-			width: $SideBarWidthSmall;
-			height: $SideBarHeightSmall;
-			margin-left: -$SideBarWidthSmall;
 		}
 	}
 

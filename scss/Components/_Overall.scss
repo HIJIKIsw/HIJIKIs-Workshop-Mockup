@@ -19,46 +19,28 @@
 		font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	}
 
-	p, span
-	{
-		word-break: break-all;
-	}
-
-	a
-	{
-		color: Color(Blue);
-		text-decoration: none;
-
-		&:hover
+	//----------------------------------------------------------------------------------------------
+	//= NoScript
+	//----------------------------------------------------------------------------------------------
+		#NoScript
 		{
-			color: Color(Blue);
-		}
+			@include Font(Caption);
+			background-color: Color(Red);
+			color: Color(White);
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			width: auto;
+			z-index: Z-Index(NoScript);
+			text-align: center;
+			padding: 8px;
+			opacity: 0.9;
 
-		&.NotExist
-		{
-			color: Color(Red);
+			> p
+			{
+				margin: 8px;
+			}
 		}
-	}
-
-	#NoScript
-	{
-		@include Font(Caption);
-		background-color: Color(Red);
-		color: Color(White);
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		width: auto;
-		z-index: Z-Index(NoScript);
-		text-align: center;
-		padding: 0.8rem;
-		opacity: 0.9;
-
-		> p
-		{
-			margin: 0.8rem;
-		}
-	}
 
 	//----------------------------------------------------------------------------------------------
 	//= Responsive
