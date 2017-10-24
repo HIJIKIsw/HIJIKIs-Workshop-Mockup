@@ -6,17 +6,13 @@
 	{
 		position: relative;
 		display: flex;
-		background-color: Color(Blue, Base);
+		background-color: Color(ThemeBlue);
 		width: $SideBarWidth;
 		height: $GlobalHeaderHeight;
 
 		@media #{$Small-And-Less}
 		{
-			position: absolute;
-			left: 0;
 			height: $GlobalHeaderHeightSmall;
-			transform: translateX(-100%);
-			z-index: Z-Index(SiteLogo);
 		}
 
 		> h1
@@ -36,7 +32,7 @@
 
 				&:hover
 				{
-					background-color: Color(Blue, Darken1);
+					background-color: Color(ThemeBlue, 600);
 				}
 
 				.Img

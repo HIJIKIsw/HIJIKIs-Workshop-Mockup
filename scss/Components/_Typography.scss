@@ -41,7 +41,7 @@
 			h1
 			{
 				@include Font(Title);
-				border-bottom: 0.1rem solid Color(White, Darken4);
+				border-bottom: 0.1rem solid Color(Grey, 400);
 
 				&:first-of-type
 				{
@@ -52,19 +52,19 @@
 			h2
 			{
 				@include Font(Title);
-				border-bottom: 0.1rem solid Color(White, Darken2);
+				border-bottom: 0.1rem solid Color(Grey, 200);
 			}
 
 			h3
 			{
 				@include Font(Subheading2);
-				border-left: 0.4rem solid Color(White, Darken2);
+				border-left: 0.4rem solid Color(Grey, 200);
 			}
 
 			h4
 			{
 				@include Font(Subheading1);
-				border-left: 0.1rem solid Color(White, Darken2);
+				border-left: 0.1rem solid Color(Grey, 200);
 			}
 
 			h5, h6

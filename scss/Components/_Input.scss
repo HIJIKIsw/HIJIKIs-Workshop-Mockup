@@ -14,7 +14,7 @@
 			{
 				position: relative;
 				border: none;
-				border-bottom: 0.1rem solid Color(White, Darken2);
+				border-bottom: 0.1rem solid Color(Grey, 200);
 				outline: none;
 				transition: all .3s;
 				padding: 0.1em;
@@ -40,7 +40,7 @@
 				&:focus
 				{
 					padding-bottom: 0.1em;
-					border-bottom: 0.2rem solid Color(Blue);
+					border-bottom: 0.2rem solid Color(ThemeBlue);
 				}
 
 				& + label
@@ -58,7 +58,7 @@
 				&:focus + label,
 				&.IsNotEmpty + label
 				{
-					color: Color(Blue);
+					color: Color(ThemeBlue);
 				}
 			}
 		}
@@ -75,7 +75,7 @@
 			{
 				position: relative;
 				border: none;
-				border-bottom: 0.1rem solid Color(White, Darken2);
+				border-bottom: 0.1rem solid Color(Grey, 200);
 				outline: none;
 				transition: all .3s;
 				padding: 0.1em;
@@ -87,7 +87,7 @@
 				&:focus
 				{
 					padding-bottom: 0.1em;
-					border-bottom: 0.2rem solid Color(Blue);
+					border-bottom: 0.2rem solid Color(ThemeBlue);
 				}
 
 				& + label
@@ -105,7 +105,7 @@
 				&:focus + label,
 				&.IsNotEmpty + label
 				{
-					color: Color(Blue);
+					color: Color(ThemeBlue);
 					top: 0;
 					transform: translateY(-100%);
 				}
@@ -124,7 +124,7 @@
 			{
 				position: relative;
 				border: none;
-				border-bottom: 0.1rem solid Color(White, Darken2);
+				border-bottom: 0.1rem solid Color(Grey, 200);
 				outline: none;
 				transition: border-color .3s, border-width .3s, padding-bottom.3s;
 				padding: 0.1em;
@@ -138,7 +138,7 @@
 				&:focus
 				{
 					padding-bottom: 0.1em;
-					border-bottom: 0.2rem solid Color(Blue);
+					border-bottom: 0.2rem solid Color(ThemeBlue);
 				}
 
 				& + label
@@ -156,7 +156,7 @@
 				&:focus + label,
 				&.IsNotEmpty + label
 				{
-					color: Color(Blue);
+					color: Color(ThemeBlue);
 					top: 0;
 					transform: translateY(-100%);
 				}
@@ -185,8 +185,9 @@
 						top: -0.1rem;
 						left: 0;
 						content: "\f131";
-						color: Color(Gray);
+						color: Color(Grey);
 						transition: all .3s;
+						font-size: 24px;
 					}
 
 					&:after
@@ -199,7 +200,7 @@
 						top: -0.1rem;
 						left: 0;
 						pointer-events: none;
-						background-color: Color(Blue);
+						background-color: Color(ThemeBlue);
 						transform: scale(2, 2);
 						opacity: 0;
 						border-radius: 100%;
@@ -216,7 +217,7 @@
 
 				&:checked + span:before
 				{
-					color: Color(Blue);
+					color: Color(ThemeBlue);
 					content: "\f132";
 				}
 
@@ -224,7 +225,7 @@
 				{
 					&:before
 					{
-						color: Color(White, Darken3);
+						color: Color(Grey, 200);
 					}
 
 					&:active:after
@@ -258,7 +259,7 @@
 						display: block;
 						width: 1em;
 						height: 1em;
-						border: 0.2rem solid Color(White, Darken2);
+						border: 0.2rem solid Color(White);
 						box-sizing: border-box;
 					}
 				}
@@ -312,8 +313,9 @@
 						top: -0.1rem;
 						left: 0;
 						content: "\f43d";
-						color: Color(Gray);
+						color: Color(Grey);
 						transition: all .3s;
+						font-size: 24px;
 					}
 
 					&:after
@@ -326,7 +328,7 @@
 						top: -0.1rem;
 						left: 0;
 						pointer-events: none;
-						background-color: Color(Blue);
+						background-color: Color(ThemeBlue);
 						transform: scale(2, 2);
 						opacity: 0;
 						border-radius: 100%;
@@ -343,7 +345,7 @@
 
 				&:checked + span:before
 				{
-					color: Color(Blue);
+					color: Color(ThemeBlue);
 					content: "\f43e";
 				}
 			}
@@ -357,6 +359,5 @@
 			> button
 			{
 				@extend .Button;
-				@extend .Ripple;
 			}
 		}

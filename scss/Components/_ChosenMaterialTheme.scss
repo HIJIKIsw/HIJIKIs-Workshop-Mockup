@@ -10,7 +10,7 @@
 		@include Font(Menu);
 
 		padding-bottom: 0.1rem;
-		border-bottom: 0.1rem solid Color(White, Darken2);
+		border-bottom: 0.1rem solid Color(Grey, 200);
 		transition: all .3s  ease;
 
 		+ label
@@ -40,49 +40,46 @@
 
 					.search-choice-close
 					{
+						@include Font(Button);
+						@extend .mdi;
+						@extend .mdi-close;
+						display: flex;
+						align-items: center;
+						justify-content: center;
 						top: auto;
 						right: 2.4rem;
+
 						opacity: 1;
 						background: none;
 
-						&:after
+						color: Color(Grey);
+
+						&:hover:before
 						{
-							@extend .mdi;
-							@include Font(Button);
-							color: Color(Gray);
-							position: absolute;
-							content: "\f156";
-							top: 50%;
-							left: 50%;
-							transform: translate(-50%, -50%);
-						}
-						&:hover:after
-						{
-							color: Color(Gray, Darken1);
+							color: Color(Grey, 700);
 						}
 					}
 				}
 
-				> div > b
+				> div
 				{
-					background: none !important;
+					width: 24px;
 
-					&:after
+					> b
 					{
-						@extend .mdi;
 						@include Font(Button);
-						color: Color(Gray);
-						position: absolute;
-						content: "\f140";
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
+						@extend .mdi;
+						@extend .mdi-chevron-down;
+						background: none !important;
+						display: flex;
+						align-items: center;
+						justify-content: center;
 					}
 				}
 
-				&:hover > div > b:after
+				&:hover > div > b:before
 				{
-					color: Color(Gray, Darken1);
+					color: Color(Grey, 700);
 				}
 			}
 
@@ -90,7 +87,7 @@
 			&.chosen-with-drop
 			{
 					padding-bottom: 0;
-					border-bottom: 0.2rem solid Color(Blue);
+					border-bottom: 0.2rem solid Color(ThemeBlue);
 			}
 			//
 
@@ -119,7 +116,7 @@
 					{
 						border: none;
 						background: none;
-						background-color: Color(White, Darken1);
+						background-color: Color(Grey, 100);
 						margin: 0;
 						padding: 0 0.8rem 0 3.2rem;
 						height: $ChosenSearchInputHeight;
@@ -132,16 +129,16 @@
 						}
 					}
 
-					&:after
+					@extend .mdi;
+					@extend .mdi-magnify;
+					&:before
 					{
-						@extend .mdi;
-						content: "\f232";
 						position: absolute;
 						left: 1.6rem;
 						top: 50%;
 						transform: translateY(-50%);
-						color: Color(Gray);
-						font-size: 1.6rem;
+						color: Color(Grey);
+						font-size: 16px;
 					}
 				}
 
@@ -161,7 +158,7 @@
 						{
 							color: inherit;
 							background: none;
-							background-color: Color(White, Darken2);
+							background-color: Color(Grey, 200);
 						}
 					}
 

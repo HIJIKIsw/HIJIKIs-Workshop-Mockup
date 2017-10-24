@@ -7,23 +7,14 @@
 		<title>HIJIKI's Workshop</title>
 		<!-- Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./lib/normalize/normalize.css">
-		<link rel="stylesheet" type="text/css" href="./lib/MaterialDesign-Webfont/css/materialdesignicons.min.css">
 		<link rel="stylesheet" type="text/css" href="./lib/chosen/chosen.min.css">
-		<link rel="stylesheet" type="text/css" href="./css/Common.css">
+		<link rel="stylesheet" type="text/css" href="./css/Workshop.css">
 		<!-- /Stylesheet -->
 	</head>
 
 	<body>
 		<div id="Wrapper">
-			<header id="GlobalHeader" class="Material Z-Depth-2">
-				<section id="SiteLogo">
-					<h1>
-						<a href="#" class="Ripple-White">
-							<div class="Img Symbol"></div>
-							<div class="Img Title"></div>
-						</a>
-					</h1>
-				</section>
+			<header id="GlobalHeader" class="Z-Depth-2">
 				<nav id="GlobalNav">
 					<ul>
 						<li class="ToggleSideBar"><a href="javascript:SideBarSwitchToggle();" class="Tooltip-Bottom Ripple" data-tooltip="サイドバー表示切り替え" data-fixed><i class="mdi mdi-menu"></i></a></li>
@@ -31,7 +22,7 @@
 						<li class="Projects"><a href="#" class="Tooltip-Bottom Ripple" data-tooltip="プロジェクト" data-fixed><i class="mdi mdi-folder"></i></a></li>
 						<li class="AdminMenu"><a href="#" class="Tooltip-Bottom Ripple" data-tooltip="管理者メニュー" data-fixed><i class="mdi mdi-security"></i></a></li>
 						<li class="ProjectSelect Medium SelectboxContainer">
-							<select name="ProjectSelect" size="1" class="CreateChosen" data-placeholder="プロジェクトへ移動...">
+							<select name="ProjectSelect" size="1" class="CreateChosen" data-placeholder="プロジェクトへ移動..." data-allow-clear="true">
 								<option></option>
 								<option value="0">プロジェクト名</option>
 								<option value="1">プロジェクト名</option>
@@ -53,13 +44,22 @@
 					</ul>
 				</nav>
 				<section id="SearchBar">
+					<span class="Magnify"><i class="mdi mdi-magnify"></i></span>
 					<form action="/" method="get" accept-charset="utf-8" autocomplete="off">
 						<input type="search" name="Search" placeholder="Workshop 内を検索" autocomplete="off">
 					</form>
-					<a href="javascript:SearchBarSwitchOff();" class="Close mdi mdi-close"></a>
+					<a href="javascript:SearchBarSwitchOff();" class="Close"><i class="mdi mdi-close"></i></a>
 				</section>
 			</header>
 			<section id="SideBar" data-scroll-scope>
+				<section id="SiteLogo">
+					<h1>
+						<a href="#" class="Ripple-White">
+							<div class="Img Symbol"></div>
+							<div class="Img Title"></div>
+						</a>
+					</h1>
+				</section>
 				<div id="SideNav">
 					<ul>
 						<li class="Active"><a href="#" class="Tooltip-Right Ripple-White" data-tooltip="トップ" data-sidenav data-fixed><i class="mdi mdi-home"></i><span>トップ</span></a></li>
@@ -418,6 +418,7 @@
 		<script defer charset="UTF-8" src="./lib/scroll-scope/scroll-scope.min.js"></script>
 		<script defer charset="UTF-8" src="./js/MediaQuery.js"></script>
 		<script defer charset="UTF-8" src="./js/InputStylingHelper.js"></script>
+		<script defer charset="UTF-8" src="./js/RippleEffect.js"></script>
 		<script defer charset="UTF-8" src="./js/SideBarController.js"></script>
 		<script defer charset="UTF-8" src="./js/SearchBarController.js"></script>
 		<script defer charset="UTF-8" src="./js/ScrollScopeController.js"></script>

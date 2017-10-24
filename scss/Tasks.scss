@@ -33,7 +33,7 @@
 			// Table Head
 			> thead > tr > th
 			{
-				border-bottom: 0.2rem solid Color(White, Darken2);
+				border-bottom: 0.2rem solid Color(White);
 				@include Font(Caption);
 				padding: 0.8rem;
 				text-align: left;
@@ -72,7 +72,7 @@
 			{
 				@include Font(Body1);
 				padding: 0.8rem;
-				border-bottom: 0.1rem solid Color(White, Darken2);
+				border-bottom: 0.1rem solid Color(White);
 				vertical-align: middle;
 
 				&.Status

@@ -4,30 +4,32 @@
 
 	#SearchBar
 	{
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		position: absolute;
-		width: calc(#{$GlobalHeaderWidth} - #{$SideBarWidth});
-		height: $GlobalHeaderHeight;
+		width: $SearchBarWidth;
+		height: $SearchBarHeight;
 		top: 0;
-		right: 0;
-		margin-top: -$GlobalHeaderHeight;
+		left: 0;
+		margin-top: -$SearchBarHeight;
 		background: Color(White);
 		padding: 0.8rem;
 		box-sizing: border-box;
 		transition: margin-top .3s ease;
 
-		@media #{$Medium-And-More}
-		{
-			&.SideBarSwitched
-			{
-				width: calc(#{$GlobalHeaderWidth} - #{$MinimizedSideBarWidth});
-			}
-		}
+		// @media #{$Medium-And-More}
+		// {
+		// 	&.SideBarSwitched
+		// 	{
+		// 		width: calc(#{$GlobalHeaderWidth} - #{$MinimizedSideBarWidth});
+		// 	}
+		// }
 
 		@media #{$Small-And-Less}
 		{
-			width: 100%;
-			height: $GlobalHeaderHeightSmall;
-			margin-top: -$GlobalHeaderHeightSmall;
+			height: $SearchBarHeightSmall;
+			margin-top: -$SearchBarHeightSmall;
 		}
 
 		&.SearchBarSwitched
@@ -35,22 +37,20 @@
 			margin-top: 0;
 		}
 
-		&:after
+		> .Magnify
 		{
-			@extend .mdi;
-			content: "\f349";
+			@include Font(Caption);
 			display: flex;
-			position: absolute;
-			top: 50%;
-			left: 1.6rem;
-			color: Color(Gray);
-			transform: translateY(-50%);
+			align-items: center;
+			justify-content: center;
+			font-size: 24px;
+			width: 48px;
+			height: 48px;
 		}
 
 		> form
 		{
-			position: relative;
-			width: 100%;
+			width: calc(100% - 48px * 2);										// Left Magnify and Right Close Button
 			height: 100%;
 
 			> input
@@ -63,7 +63,6 @@
 				outline: none;
 				background-color: Color(White);
 				transition: box-shadow .3s, background-color .3s;
-				padding: 0 4.8rem 0 4rem;
 			}
 		}
 
@@ -73,18 +72,15 @@
 			align-items: center;
 			justify-content: center;
 			text-decoration: none;
-			width: 4.8rem;
-			height: 4.8rem;
-			position: absolute;
-			top: 50%;
-			right: 0.8rem;
-			transform: translateY(-50%);
-			color: Color(Gray);
+			width: 48px;
+			height: 48px;
+			color: Color(Grey);
 			transition: color .3s;
+			font-size: 24px;
 
 			&:hover
 			{
-				color: Color(Gray, Darken1);
+				color: Color(Grey, 700);
 			}
 		}
 	}

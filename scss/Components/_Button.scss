@@ -7,7 +7,7 @@
 		@include Font(Button);
 		@extend .Z-Depth-1;
 
-		background-color: Color(White, Darken3);
+		background-color: Color(Grey, 300);
 		border: none;
 		outline: none;
 		padding: 0.6em 0.8em;
@@ -19,6 +19,6 @@
 		&:active
 		{
 			@extend .Z-Depth-4;
-			background-color: Color(White, Darken4);
+			background-color: Color(Grey, 400);
 		}	
 	}

@@ -5,7 +5,7 @@
 	.tinytip
 	{
 		@include Font(Caption);
-		background-color: Color(Gray, Darken2);
+		background-color: Color(Grey, 700);
 		color: Color(White);
 		display: flex;
 		align-items: center;
@@ -17,19 +17,19 @@
 
 		&.tinytip-top
 		{
-			margin-bottom: 0.8rem;
+			margin-bottom: 1.4rem;
 		}
 		&.tinytip-bottom
 		{
-			margin-top: 0.8rem;
+			margin-top: 1.4rem;
 		}
 		&.tinytip-left
 		{
-			margin-right: 0.8rem;
+			margin-right: 1.4rem;
 		}
 		&.tinytip-right
 		{
-			margin-left: 0.8rem;
+			margin-left: 1.4rem;
 		}
 
 		&.tinytip-sidenav:not(.SideBarSwitched)

@@ -9,15 +9,14 @@
 
 	html, body
 	{
-		background-color: Color(HtmlBG, Base);
+		background-color: Color(Grey, 50);
 		overflow-x: hidden;
 		width: 100%;
 	}
 
 	body
 	{
-		font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-		color: #ff00ff;
+		font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 	}
 
 	p, span
@@ -27,7 +26,7 @@
 
 	a
 	{
-		color: Color(Blue, Lighten1);
+		color: Color(Blue);
 		text-decoration: none;
 
 		&:hover
@@ -37,7 +36,7 @@
 
 		&.NotExist
 		{
-			color: Color(Red, Darken4);
+			color: Color(Red);
 		}
 	}
 
@@ -60,57 +59,6 @@
 			margin: 0.8rem;
 		}
 	}
-
-	//----------------------------------------------------------------------------------------------
-	//= Material Shadow
-	//----------------------------------------------------------------------------------------------
-		// 1dp
-		.Z-Depth-0
-		{
-			box-shadow: none !important
-		}
-
-		// 2dp
-		.Z-Depth-1
-		{
-			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-		}
-
-		// 3dp
-		.Z-Depth-1-Half
-		{
-			box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
-		}
-
-		// 4dp
-		.Z-Depth-2
-		{
-			box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-		}
-
-		// 6dp
-		.Z-Depth-3
-		{
-			box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
-		}
-
-		// 8dp
-		.Z-Depth-4
-		{
-			box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-		}
-
-		// 16dp
-		.Z-Depth-5
-		 {
-			box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-		}
-
-		// 24dp
-		.Z-Depth-6
-		 {
-			box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
-		}
 
 	//----------------------------------------------------------------------------------------------
 	//= Responsive
@@ -137,17 +85,3 @@
 					display: none !important;
 				}	
 			}
-
-	//----------------------------------------------------------------------------------------------
-	//= Material Icons
-	//----------------------------------------------------------------------------------------------
-	.mdi
-	{
-		display: inline-block;
-		font: normal normal normal 24px/1 "Material Design Icons";
-		text-rendering: auto;
-		line-height: inherit;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		font-size: 2.4rem;
-	}

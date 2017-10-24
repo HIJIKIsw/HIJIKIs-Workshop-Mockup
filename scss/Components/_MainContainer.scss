@@ -20,8 +20,8 @@
 
 		> #MainHeader
 		{
-			background-color: Color(White, Base);
-			border-bottom: 0.1rem solid Color(White, Darken1);
+			background-color: Color(White);
+			border-bottom: 0.1rem solid Color(White);
 			padding-top: 2.4rem;
 
 			@media #{$Small-And-Less}

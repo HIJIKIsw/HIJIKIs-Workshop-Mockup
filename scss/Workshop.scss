@@ -4,6 +4,9 @@
 
 	@charset "UTF-8";
 
+	// Library
+	@import "../lib/MaterialDesign-Webfont/css/materialdesignicons.custom.scss";
+
 	// Definition
 	@import "Definition/Variables";
 	@import "Definition/Colors";
@@ -14,6 +17,7 @@
 	@import "Components/Overall";
 	@import "Components/Typography";
 	@import "Components/Card";
+	@import "Components/MaterialShadow";
 	@import "Components/Columns";
 	@import "Components/Button";
 	@import "Components/Input";
@@ -31,7 +35,7 @@
 	@import "Components/Shade";
 	@import "Components/ChosenMaterialTheme";
 	@import "Components/ProjectSelect";
-	@import "Components/RippleEffect";
+	// @import "Components/RippleEffect";
 	@import "Components/TinyTipMaterialTheme";
 
 //--------------------------------------------------------------------------------------------------

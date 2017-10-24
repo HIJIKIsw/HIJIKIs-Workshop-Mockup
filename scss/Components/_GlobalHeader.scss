@@ -8,20 +8,29 @@
 		z-index: 200;
 		top: 0;
 		left: 0;
+		margin-left: $SideBarWidth;
 		display: flex;
-		background-color: Color(White, Base);
+		background-color: Color(White);
 		width: $GlobalHeaderWidth;
 		height: $GlobalHeaderHeight;
 		z-index: Z-Index(GlobalHeader);
 
+		@media #{$Small-And-Less}
+		{
+			margin-left: 0;
+			width: $GlobalHeaderWidthSmall;
+			height: $GlobalHeaderHeightSmall;
+		}
+
 		> #GlobalNav
 		{
-			width: calc(#{$GlobalHeaderWidth} - #{$SideBarWidth});
+			width: 100%;
+			padding: 0 1.6rem;
+			box-sizing: border-box;
 
-			@media #{$Medium-And-More}
+			@media #{$Small-And-Less}
 			{
-				padding: 0 1.6rem;
-				box-sizing: border-box;
+				padding: 0 0.8rem;
 			}
 
 			> ul
@@ -32,20 +41,17 @@
 				margin: 0;
 				padding: 0;
 				list-style-type: none;
+				align-items: center;
 
 				> li
 				{
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					width: $GlobalHeaderHeight;
-					height: 100%;
-
-					@media #{$Small-And-Less}
-					{
-						width: $GlobalHeaderHeightSmall;
-						height: 100%;
-					}
+					width: 4.8rem;
+					height: 4.8rem;
+					border-radius: 50%;
+					overflow: hidden;
 
 					> a
 					{
@@ -55,17 +61,12 @@
 						width: 100%;
 						height: 100%;
 						text-decoration: none;
-						color: Color(Gray, Base);
-
-						@media #{$Small-And-Less}
-						{
-							width: 100%;
-							height: 100%;
-						}
+						color: Color(Grey);
+						font-size: 24px;
 
 						&:hover
 						{
-							color: Color(Gray, Darken1);
+							color: Color(Grey, 700);
 						}
 
 						i
@@ -102,20 +103,7 @@
 						margin-left: auto;
 					}
 				}
-
-
 			}
-
-			@media #{$Small-And-Less}
-			{
-				width: 100%;
-			}
-		}
-
-		@media #{$Small-And-Less}
-		{
-			width: $GlobalHeaderWidthSmall;
-			height: $GlobalHeaderHeightSmall;
 		}
 	}
 
@@ -129,21 +117,16 @@
 			// Transition Settings
 			#GlobalHeader
 			{
-				> #GlobalNav
-				{
-					transition-duration: .3s;
-					transition-timing-function: ease;
-					transition-property: width;
-				}
+				transition-duration: .3s;
+				transition-timing-function: ease;
+				transition-property: width, height, margin-left;
 			}
 			//
 
 			#GlobalHeader.SideBarSwitched
 			{
-				> #GlobalNav
-				{
-					width: calc(#{$GlobalHeaderWidth} - #{$MinimizedSideBarWidth});
-				}
+				margin-left: $MinimizedSideBarWidth;
+				width: calc(100% - #{$MinimizedSideBarWidth});
 			}
 		}
 
@@ -155,7 +138,7 @@
 			{
 				transition-duration: .3s;
 				transition-timing-function: ease;
-				transition-property: margin-left;
+				transition-property: width, height, margin-left;
 			}
 			//
 			#GlobalHeader.SideBarSwitched

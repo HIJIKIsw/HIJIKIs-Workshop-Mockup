@@ -26,19 +26,24 @@
 					align-items: center;
 					justify-content: center;
 					text-decoration: none;
-					color: Color(Gray, Base);
+					color: Color(Grey);
 			        box-sizing: border-box;
 			        padding-bottom: 0.2rem;
 
 					&:hover
 					{
-						color: Color(Gray, Darken1)
+						color: Color(Grey, 700)
 					}
 
 					i,
 					span
 					{
 						pointer-events: none;
+					}
+
+					.mdi
+					{
+						font-size: 24px;
 					}
 				}
 			}
@@ -48,8 +53,8 @@
 				> a
 				{
 					padding-bottom: 0;
-					border-bottom: 0.2rem solid Color(Blue);
-					color: Color(Blue);
+					border-bottom: 0.2rem solid Color(ThemeBlue);
+					color: Color(ThemeBlue);
 				}
 			}
 		}
@@ -61,7 +66,7 @@
 				flex-direction: column;
 				> li
 				{
-					border-top: 0.1rem solid Color(White, Darken2);
+					border-top: 0.1rem solid Color(White);
 					overflow: hidden;
 					height: 4.8rem;
 					transition: height .3s ease, opacity .3s ease;
@@ -79,7 +84,7 @@
 					> a
 					{
 						border-bottom: none;
-						border-left: 0.4rem solid Color(Blue);
+						border-left: 0.4rem solid Color(ThemeBlue);
 						padding-left: 1.6rem;
 					}
 				}

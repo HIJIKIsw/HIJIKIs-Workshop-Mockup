@@ -36,9 +36,9 @@
 
 				&:after
 				{
-					@extend .mdi;
 					@include Font(Caption);
-					content: "\f142";
+					content: "/";
+					margin: 8px;
 				}
 			}
 		}
