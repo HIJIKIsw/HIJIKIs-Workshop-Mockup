@@ -1,27 +1,27 @@
 #PageContainer.Tasks .TableWrapper { overflow-x: auto; }
 
-#PageContainer.Tasks table { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 59.2rem; margin-bottom: 1.6rem; table-layout: fixed; }
+#PageContainer.Tasks table { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 592px; margin-bottom: 16px; table-layout: fixed; }
 
-#PageContainer.Tasks table > caption { font-size: 21px; font-weight: 500; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding: 0.8rem; text-align: left; }
+#PageContainer.Tasks table > caption { font-size: 21px; font-weight: 500; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding: 8px; text-align: left; }
 
-#PageContainer.Tasks table > thead > tr > th { border-bottom: 0.2rem solid rgb(255,255,255); font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); padding: 0.8rem; text-align: left; vertical-align: middle; font-weight: bold; }
+#PageContainer.Tasks table > thead > tr > th { border-bottom: 2px solid rgb(255,255,255); font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); padding: 8px; text-align: left; vertical-align: middle; font-weight: bold; }
 
-#PageContainer.Tasks table > thead > tr > th.Status { width: 4.8rem; }
+#PageContainer.Tasks table > thead > tr > th.Status { width: 48px; }
 
-#PageContainer.Tasks table > thead > tr > th.ID { width: 9.6rem; }
+#PageContainer.Tasks table > thead > tr > th.ID { width: 96px; }
 
-#PageContainer.Tasks table > thead > tr > th.TaskName { min-width: 24rem; }
+#PageContainer.Tasks table > thead > tr > th.TaskName { min-width: 240px; }
 
-#PageContainer.Tasks table > thead > tr > th.Person { width: 16rem; }
+#PageContainer.Tasks table > thead > tr > th.Person { width: 160px; }
 
-#PageContainer.Tasks table > thead > tr > th.Menu { width: 3.2rem; text-align: center; }
+#PageContainer.Tasks table > thead > tr > th.Menu { width: 32px; text-align: center; }
 
-#PageContainer.Tasks table > tbody > tr > td { font-size: 14px; font-weight: 400; line-height: 23px; color: rgba(0, 0, 0, 0.87); padding: 0.8rem; border-bottom: 0.1rem solid rgb(255,255,255); vertical-align: middle; }
+#PageContainer.Tasks table > tbody > tr > td { font-size: 14px; font-weight: 400; line-height: 23px; color: rgba(0, 0, 0, 0.87); padding: 8px; border-bottom: 1px solid rgb(255,255,255); vertical-align: middle; }
 
 #PageContainer.Tasks table > tbody > tr > td.Person > div { display: flex; align-items: center; width: 100%; word-break: break-all; }
 
-#PageContainer.Tasks table > tbody > tr > td.Person > div > img { max-width: 2.4rem; max-height: 2.4rem; margin-right: 0.8rem; }
+#PageContainer.Tasks table > tbody > tr > td.Person > div > img { max-width: 24px; max-height: 24px; margin-right: 8px; }
 
-#PageContainer.Tasks table > tbody > tr > td.Menu { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); width: 3.2rem; text-align: center; }
+#PageContainer.Tasks table > tbody > tr > td.Menu { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); width: 32px; text-align: center; }
 
 /*# sourceMappingURL=Tasks.css.map */

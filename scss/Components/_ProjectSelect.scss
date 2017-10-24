@@ -12,19 +12,19 @@
 				{
 					margin-top: 0;
 					margin-bottom: 0;
-					width: 20rem;
+					width: 200px;
 
 					// Original Selectbox
 					> select.CreateChosen
 					{
 						position: absolute;
 						width: 100%;
-						bottom: 0.8rem;
+						bottom: 8px;
 						left: 0;
 
 						& + label
 						{
-							top: 0.8rem;
+							top: 8px;
 							transform: none;
 						}
 					}
@@ -49,7 +49,7 @@
 
 							> span
 							{
-								margin-left: 0.8rem;
+								margin-left: 8px;
 								pointer-events: none;
 							}
 
@@ -68,7 +68,7 @@
 							> .chosen-results
 							{
 								box-sizing: border-box;
-								max-height: calc(100vh - #{$GlobalHeaderHeight} - #{$ChosenSearchInputHeight} - (#{$ChosenSearchBarPadding} * 2) - 1.6rem);
+								max-height: calc(100vh - #{$GlobalHeaderHeight} - #{$ChosenSearchInputHeight} - (#{$ChosenSearchBarPadding} * 2) - 16px);
 							}
 						}
 					}

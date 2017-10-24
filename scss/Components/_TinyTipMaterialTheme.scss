@@ -9,27 +9,27 @@
 		color: Color(White);
 		display: flex;
 		align-items: center;
-		padding: 0.8rem;
+		padding: 8px;
 		opacity: 0.9;
 		z-index: Z-Index(Tooltip);
-		border-radius: 0.2rem;
+		border-radius: 2px;
 		pointer-events: none;
 
 		&.tinytip-top
 		{
-			margin-bottom: 1.4rem;
+			margin-bottom: 14px;
 		}
 		&.tinytip-bottom
 		{
-			margin-top: 1.4rem;
+			margin-top: 14px;
 		}
 		&.tinytip-left
 		{
-			margin-right: 1.4rem;
+			margin-right: 14px;
 		}
 		&.tinytip-right
 		{
-			margin-left: 1.4rem;
+			margin-left: 14px;
 		}
 
 		&.tinytip-sidenav:not(.SideBarSwitched)

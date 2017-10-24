@@ -19,16 +19,16 @@
 				> a
 				{
 					@include Font(Menu);
-					min-width: 4.8rem;
-					min-height: 4.8rem;
-					padding: 0 2.4rem;
+					min-width: 48px;
+					min-height: 48px;
+					padding: 0 24px;
 					display: flex;
 					align-items: center;
 					justify-content: center;
 					text-decoration: none;
 					color: Color(Grey);
 			        box-sizing: border-box;
-			        padding-bottom: 0.2rem;
+			        padding-bottom: 2px;
 
 					&:hover
 					{
@@ -53,7 +53,7 @@
 				> a
 				{
 					padding-bottom: 0;
-					border-bottom: 0.2rem solid Color(ThemeBlue);
+					border-bottom: 2px solid Color(ThemeBlue);
 					color: Color(ThemeBlue);
 				}
 			}
@@ -66,14 +66,14 @@
 				flex-direction: column;
 				> li
 				{
-					border-top: 0.1rem solid Color(White);
+					border-top: 1px solid Color(White);
 					overflow: hidden;
-					height: 4.8rem;
+					height: 48px;
 					transition: height .3s ease, opacity .3s ease;
 
 					> a
 					{
-						padding: 0 1.6rem 0 2rem;
+						padding: 0 16px 0 20px;
 						width: 100%;
 						justify-content: flex-start;
 					}
@@ -84,8 +84,8 @@
 					> a
 					{
 						border-bottom: none;
-						border-left: 0.4rem solid Color(ThemeBlue);
-						padding-left: 1.6rem;
+						border-left: 4px solid Color(ThemeBlue);
+						padding-left: 16px;
 					}
 				}
 			}
@@ -140,8 +140,8 @@
 
 					display: flex;
 					cursor: pointer;
-					padding: 0 1.6rem;
-					height: 4.8rem;
+					padding: 0 16px;
+					height: 48px;
 					align-items: center;
 					justify-content: flex-start;
 					pointer-events: none;

@@ -21,22 +21,22 @@
 		> #MainHeader
 		{
 			background-color: Color(White);
-			border-bottom: 0.1rem solid Color(White);
-			padding-top: 2.4rem;
+			border-bottom: 1px solid Color(White);
+			padding-top: 24px;
 
 			@media #{$Small-And-Less}
 			{
-				padding-top: 1.6rem;
+				padding-top: 16px;
 			}
 
 			> #SectionName
 			{
 				@include Font(Headline);
-				margin: 0 2.4rem 2.4rem;
+				margin: 0 24px 24px;
 
 				@media #{$Small-And-Less}
 				{
-					margin: 0 1.6rem 1.6rem;
+					margin: 0 16px 16px;
 				}
 			}
 		}
@@ -61,7 +61,7 @@
 			#MainContainer.SideBarSwitched
 			{
 				width: calc(100% - #{$MinimizedSideBarWidth});
-				margin-left: 6.4rem;
+				margin-left: 64px;
 			}
 		}
 

@@ -4,11 +4,11 @@
 
 	#PageName
 	{
-		margin: 0 3.2rem 1.6rem;
+		margin: 0 32px 16px;
 
 		@media #{$Small-And-Less}
 		{
-			margin: 0 1.6rem 1.6rem;
+			margin: 0 16px 16px;
 		}
 
 		> h1

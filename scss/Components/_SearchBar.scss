@@ -14,7 +14,7 @@
 		height: $SearchBarHeight;
 		margin-top: -$SearchBarHeight;
 		background: Color(White);
-		padding: 0.8rem;
+		padding: 8px;
 		box-sizing: border-box;
 		transition: margin-top .3s ease, opacity .3s ease;
 		opacity: 0;

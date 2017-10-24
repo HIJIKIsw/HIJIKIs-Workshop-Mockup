@@ -4285,50 +4285,49 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 @media screen and (max-width: 768px) { .Row .Column-Small-12 { width: calc(100% / 12 * 12); } }
 
-.Button, .ButtonContainer > button { font-size: 15px; font-weight: 500; line-height: 1.15; color: rgba(0, 0, 0, 0.87); background-color: rgb(224,224,224); border: none; outline: none; padding: 0.6em 0.8em; border-radius: 0; transition: box-shadow .3s, background-color .3s; cursor: pointer; min-width: 8.8rem; }
+.Button, .ButtonContainer > button { font-size: 15px; font-weight: 500; line-height: 1.15; color: rgba(0, 0, 0, 0.87); background-color: rgb(224,224,224); border: none; outline: none; padding: 0.6em 0.8em; border-radius: 0; transition: box-shadow .3s, background-color .3s; cursor: pointer; min-width: 88px; }
 
 .Button:active, .ButtonContainer > button:active { background-color: rgb(189,189,189); }
 
-.SelectboxContainer { position: relative; margin: 2.4rem 0 1.6rem; }
+.SelectboxContainer { position: relative; margin: 24px 0 16px; }
 
-.SelectboxContainer select { position: relative; border: none; border-bottom: 0.1rem solid rgb(238,238,238); outline: none; transition: all .3s; padding: 0.1em; padding-right: 2.4rem; padding-bottom: calc(0.1em + 0.1rem); border-radius: 0; min-height: 2.8rem; max-width: 100%; background: transparent url("../svg/SelectboxDownArrow.svg") right 0 center no-repeat; background-size: 2.4rem; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; }
+.SelectboxContainer select { position: relative; border: none; border-bottom: 1px solid rgb(238,238,238); outline: none; transition: all .3s; padding: 0.1em; padding-right: 24px; padding-bottom: calc(0.1em + 1px); border-radius: 0; min-height: 28px; max-width: 100%; background: transparent url("../svg/SelectboxDownArrow.svg") right 0 center no-repeat; background-size: 24px; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ''; }
 
 .SelectboxContainer select::-ms-expand { display: none; }
 
-.SelectboxContainer select:focus { padding-bottom: 0.1em; border-bottom: 0.2rem solid rgb(0,87,144); }
+.SelectboxContainer select:focus { padding-bottom: 0.1em; border-bottom: 2px solid rgb(0,87,144); }
 
 .SelectboxContainer select + label { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); position: absolute; top: 0; left: 0; pointer-events: none; transform: translateY(-100%); transition: all .3s; }
 
 .SelectboxContainer select:focus + label, .SelectboxContainer select.IsNotEmpty + label { color: rgb(0,87,144); }
 
-.TextfieldContainer { position: relative; margin: 3.2rem 0 2.4rem; }
+.TextfieldContainer { position: relative; margin: 32px 0 24px; }
 
-.TextfieldContainer input[type=text] { position: relative; border: none; border-bottom: 0.1rem solid rgb(238,238,238); outline: none; transition: all .3s; padding: 0.1em; padding-bottom: calc(0.1em + 0.1rem); border-radius: 0; min-height: 2.8rem; box-sizing: border-box; }
+.TextfieldContainer input[type=text] { position: relative; border: none; border-bottom: 1px solid rgb(238,238,238); outline: none; transition: all .3s; padding: 0.1em; padding-bottom: calc(0.1em + 1px); border-radius: 0; min-height: 28px; box-sizing: border-box; }
 
-.TextfieldContainer input[type=text]:focus { padding-bottom: 0.1em; border-bottom: 0.2rem solid rgb(0,87,144); }
+.TextfieldContainer input[type=text]:focus { padding-bottom: 0.1em; border-bottom: 2px solid rgb(0,87,144); }
 
 .TextfieldContainer input[type=text] + label { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); position: absolute; top: 50%; left: 0; pointer-events: none; transform: translateY(-50%); transition: all .3s; }
 
 .TextfieldContainer input[type=text]:focus + label, .TextfieldContainer input[type=text].IsNotEmpty + label { color: rgb(0,87,144); top: 0; transform: translateY(-100%); }
 
-.TextareaContainer { position: relative; margin: 3.2rem 0 2.4rem; }
+.TextareaContainer { position: relative; margin: 32px 0 24px; }
 
-.TextareaContainer textarea { position: relative; border: none; border-bottom: 0.1rem solid rgb(238,238,238); outline: none; transition: border-color 0.3s, border-width 0.3s, padding-bottom 0.3s; padding: 0.1em; padding-top: 0.4em; padding-bottom: calc(0.1em + 0.1rem); border-radius: 0; min-height: 2.8rem; box-sizing: border-box; vertical-align: bottom; }
+.TextareaContainer textarea { position: relative; border: none; border-bottom: 1px solid rgb(238,238,238); outline: none; transition: border-color 0.3s, border-width 0.3s, padding-bottom 0.3s; padding: 0.1em; padding-top: 0.4em; padding-bottom: calc(0.1em + 1px); border-radius: 0; min-height: 28px; box-sizing: border-box; vertical-align: bottom; }
 
-.TextareaContainer textarea:focus { padding-bottom: 0.1em; border-bottom: 0.2rem solid rgb(0,87,144); }
+.TextareaContainer textarea:focus { padding-bottom: 0.1em; border-bottom: 2px solid rgb(0,87,144); }
 
 .TextareaContainer textarea + label { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); position: absolute; top: 50%; left: 0; pointer-events: none; transform: translateY(-50%); transition: all .3s; }
 
 .TextareaContainer textarea:focus + label, .TextareaContainer textarea.IsNotEmpty + label { color: rgb(0,87,144); top: 0; transform: translateY(-100%); }
 
-/**/
 .CheckboxContainer > label > input[type=checkbox] { display: none; }
 
-.CheckboxContainer > label > input[type=checkbox] + span { position: relative; padding-left: 2.6rem; }
+.CheckboxContainer > label > input[type=checkbox] + span { position: relative; padding-left: 26px; }
 
-.CheckboxContainer > label > input[type=checkbox] + span:before { position: absolute; top: -0.1rem; left: 0; content: "\f131"; color: rgb(158,158,158); transition: all .3s; font-size: 24px; }
+.CheckboxContainer > label > input[type=checkbox] + span:before { position: absolute; top: -1px; left: 0; content: "\f131"; color: rgb(158,158,158); transition: all .3s; font-size: 24px; }
 
-.CheckboxContainer > label > input[type=checkbox] + span:after { content: ""; display: block; position: absolute; width: 2.4rem; height: 2.4rem; top: -0.1rem; left: 0; pointer-events: none; background-color: rgb(0,87,144); transform: scale(2, 2); opacity: 0; border-radius: 100%; transition: transform 0.5s, opacity 1s; }
+.CheckboxContainer > label > input[type=checkbox] + span:after { content: ""; display: block; position: absolute; width: 24px; height: 24px; top: -1px; left: 0; pointer-events: none; background-color: rgb(0,87,144); transform: scale(2, 2); opacity: 0; border-radius: 100%; transition: transform 0.5s, opacity 1s; }
 
 .CheckboxContainer > label > input[type=checkbox] + span:active:after { transform: scale(0, 0); opacity: 0.5; transition: 0s; }
 
@@ -4338,16 +4337,13 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 .CheckboxContainer > label > input[type=checkbox][disabled] + span:active:after { opacity: 0; }
 
-/**/
-/** .Input.CheckboxContainer { > label > input[type=checkbox] { display: none; & + span { position: relative; padding-left: 1.5em; &:before { position: absolute; content: ""; top: 50%; left: 0; transform: translateY(-50%); display: block; width: 1em; height: 1em; border: 0.2rem solid Color(White); box-sizing: border-box; } } &:checked + span { &:before { background-color: Color(Blue); border: none; } &:after { content: ""; display: block; position: absolute; width: 0.3em; height: 0.6em; border-bottom: 0.15em solid Color(White); border-right: 0.15em solid Color(White); background: transparent; top: 0.24em; left: 0.3em; transform: rotate(45deg); } } } } /**/
-/**/
 .RadioButtonContainer label > input[type=radio] { display: none; }
 
-.RadioButtonContainer label > input[type=radio] + span { position: relative; padding-left: 2.6rem; }
+.RadioButtonContainer label > input[type=radio] + span { position: relative; padding-left: 26px; }
 
-.RadioButtonContainer label > input[type=radio] + span:before { position: absolute; top: -0.1rem; left: 0; content: "\f43d"; color: rgb(158,158,158); transition: all .3s; font-size: 24px; }
+.RadioButtonContainer label > input[type=radio] + span:before { position: absolute; top: -1px; left: 0; content: "\f43d"; color: rgb(158,158,158); transition: all .3s; font-size: 24px; }
 
-.RadioButtonContainer label > input[type=radio] + span:after { content: ""; display: block; position: absolute; width: 2.4rem; height: 2.4rem; top: -0.1rem; left: 0; pointer-events: none; background-color: rgb(0,87,144); transform: scale(2, 2); opacity: 0; border-radius: 100%; transition: transform 0.5s, opacity 1s; }
+.RadioButtonContainer label > input[type=radio] + span:after { content: ""; display: block; position: absolute; width: 24px; height: 24px; top: -1px; left: 0; pointer-events: none; background-color: rgb(0,87,144); transform: scale(2, 2); opacity: 0; border-radius: 100%; transition: transform 0.5s, opacity 1s; }
 
 .RadioButtonContainer label > input[type=radio] + span:active:after { transform: scale(0, 0); opacity: 0.5; transition: 0s; }
 
@@ -4357,13 +4353,13 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 @media screen and (max-width: 768px) { #GlobalHeader { margin-left: 0; width: 100%; height: 56px; } }
 
-#GlobalHeader > #GlobalNav { width: 100%; padding: 0 1.6rem; box-sizing: border-box; }
+#GlobalHeader > #GlobalNav { width: 100%; padding: 0 16px; box-sizing: border-box; }
 
-@media screen and (max-width: 768px) { #GlobalHeader > #GlobalNav { padding: 0 0.8rem; } }
+@media screen and (max-width: 768px) { #GlobalHeader > #GlobalNav { padding: 0 8px; } }
 
 #GlobalHeader > #GlobalNav > ul { display: flex; width: 100%; height: 100%; margin: 0; padding: 0; list-style-type: none; align-items: center; }
 
-#GlobalHeader > #GlobalNav > ul > li { display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; border-radius: 50%; overflow: hidden; }
+#GlobalHeader > #GlobalNav > ul > li { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; overflow: hidden; }
 
 #GlobalHeader > #GlobalNav > ul > li > a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; text-decoration: none; color: rgb(158,158,158); font-size: 24px; }
 
@@ -4373,7 +4369,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 #GlobalHeader > #GlobalNav > ul > li.ProjectSelect { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); margin-left: auto; overflow: visible; }
 
-#GlobalHeader > #GlobalNav > ul > li.User > a > img { max-width: 3.2rem; max-height: 3.2rem; pointer-events: none; }
+#GlobalHeader > #GlobalNav > ul > li.User > a > img { max-width: 32px; max-height: 32px; pointer-events: none; }
 
 @media screen and (max-width: 768px) { #GlobalHeader > #GlobalNav > ul > li.Search { margin-left: auto; } }
 
@@ -4395,7 +4391,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 #SiteLogo > h1 > a .Img { pointer-events: none; background-position: 50% 50%; background-size: 100%; background-repeat: no-repeat; }
 
-#SiteLogo > h1 > a .Symbol { display: block; margin-right: 0.8rem; width: 32px; height: 100%; background-image: url("../svg/SiteSymbol.svg"); }
+#SiteLogo > h1 > a .Symbol { display: block; margin-right: 8px; width: 32px; height: 100%; background-image: url("../svg/SiteSymbol.svg"); }
 
 #SiteLogo > h1 > a .Title { width: 151px; height: 100%; background-image: url("../svg/SiteTitle.svg"); }
 
@@ -4406,7 +4402,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
   #SiteLogo.SideBarSwitched > h1 > a > .Symbol { margin: 0; }
   #SiteLogo.SideBarSwitched > h1 > a > .Title { opacity: 0; width: 0; } }
 
-#SearchBar { position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 64px; margin-top: -64px; background: rgb(255,255,255); padding: 0.8rem; box-sizing: border-box; transition: margin-top .3s ease, opacity .3s ease; opacity: 0; }
+#SearchBar { position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 100%; height: 64px; margin-top: -64px; background: rgb(255,255,255); padding: 8px; box-sizing: border-box; transition: margin-top .3s ease, opacity .3s ease; opacity: 0; }
 
 @media screen and (max-width: 768px) { #SearchBar { width: 100%; height: 56px; margin-top: -56px; } }
 
@@ -4426,15 +4422,15 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 @media screen and (max-width: 768px) { #SideBar { margin-left: -240px; } }
 
-#SideBar > #SideNav { width: 100%; padding-top: 1.6rem; }
+#SideBar > #SideNav { width: 100%; padding-top: 16px; }
 
 #SideBar > #SideNav > ul { width: 100%; margin: 0; padding: 0; list-style-type: none; }
 
-#SideBar > #SideNav > ul > li { display: flex; align-items: center; justify-content: flex-start; height: 4.8rem; }
+#SideBar > #SideNav > ul > li { display: flex; align-items: center; justify-content: flex-start; height: 48px; }
 
-#SideBar > #SideNav > ul > li > a { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; text-decoration: none; height: 100%; padding-left: 1.6rem; color: rgb(176,190,197); border-left: 0.4rem solid transparent; }
+#SideBar > #SideNav > ul > li > a { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: flex-start; text-decoration: none; height: 100%; padding-left: 16px; color: rgb(176,190,197); border-left: 4px solid transparent; }
 
-#SideBar > #SideNav > ul > li > a > i { font-size: 24px; margin-right: 0.2rem; pointer-events: none; }
+#SideBar > #SideNav > ul > li > a > i { font-size: 24px; margin-right: 2px; pointer-events: none; }
 
 #SideBar > #SideNav > ul > li > a > span { overflow: hidden; white-space: nowrap; pointer-events: none; }
 
@@ -4456,16 +4452,16 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 @media screen and (max-width: 768px) { #MainContainer { margin-left: 0; margin-top: 56px; width: 100%; } }
 
-#MainContainer > #MainHeader { background-color: rgb(255,255,255); border-bottom: 0.1rem solid rgb(255,255,255); padding-top: 2.4rem; }
+#MainContainer > #MainHeader { background-color: rgb(255,255,255); border-bottom: 1px solid rgb(255,255,255); padding-top: 24px; }
 
-@media screen and (max-width: 768px) { #MainContainer > #MainHeader { padding-top: 1.6rem; } }
+@media screen and (max-width: 768px) { #MainContainer > #MainHeader { padding-top: 16px; } }
 
-#MainContainer > #MainHeader > #SectionName { font-size: 24px; font-weight: 400; line-height: 34px; color: rgba(0, 0, 0, 0.87); margin: 0 2.4rem 2.4rem; }
+#MainContainer > #MainHeader > #SectionName { font-size: 24px; font-weight: 400; line-height: 34px; color: rgba(0, 0, 0, 0.87); margin: 0 24px 24px; }
 
-@media screen and (max-width: 768px) { #MainContainer > #MainHeader > #SectionName { margin: 0 1.6rem 1.6rem; } }
+@media screen and (max-width: 768px) { #MainContainer > #MainHeader > #SectionName { margin: 0 16px 16px; } }
 
 @media screen and (min-width: 769px) { #MainContainer { transition-duration: .3s; transition-timing-function: ease; transition-property: margin-left, width; }
-  #MainContainer.SideBarSwitched { width: calc(100% - 64px); margin-left: 6.4rem; } }
+  #MainContainer.SideBarSwitched { width: calc(100% - 64px); margin-left: 64px; } }
 
 @media screen and (max-width: 768px) { #MainContainer { transition-duration: .3s; transition-timing-function: ease; transition-property: margin-left; }
   #MainContainer.SideBarSwitched { margin-left: 240px; } }
@@ -4474,7 +4470,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 #TabBar > ul > li { display: flex; }
 
-#TabBar > ul > li > a { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); min-width: 4.8rem; min-height: 4.8rem; padding: 0 2.4rem; display: flex; align-items: center; justify-content: center; text-decoration: none; color: rgb(158,158,158); box-sizing: border-box; padding-bottom: 0.2rem; }
+#TabBar > ul > li > a { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); min-width: 48px; min-height: 48px; padding: 0 24px; display: flex; align-items: center; justify-content: center; text-decoration: none; color: rgb(158,158,158); box-sizing: border-box; padding-bottom: 2px; }
 
 #TabBar > ul > li > a:hover { color: rgb(97,97,97); }
 
@@ -4482,40 +4478,40 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 #TabBar > ul > li > a .mdi, #TabBar > ul > li > a .chosen-container.chosen-container-single .chosen-single.chosen-single-with-deselect .search-choice-close, .chosen-container.chosen-container-single .chosen-single.chosen-single-with-deselect #TabBar > ul > li > a .search-choice-close, #TabBar > ul > li > a .chosen-container.chosen-container-single .chosen-single > div > b, .chosen-container.chosen-container-single #TabBar > ul > li > a .chosen-single > div > b, #TabBar > ul > li > a .chosen-container.chosen-container-single .chosen-drop .chosen-search, .chosen-container.chosen-container-single .chosen-drop #TabBar > ul > li > a .chosen-search { font-size: 24px; }
 
-#TabBar > ul > li.Active > a { padding-bottom: 0; border-bottom: 0.2rem solid rgb(0,87,144); color: rgb(0,87,144); }
+#TabBar > ul > li.Active > a { padding-bottom: 0; border-bottom: 2px solid rgb(0,87,144); color: rgb(0,87,144); }
 
 @media screen and (max-width: 768px) { #TabBar > ul { flex-direction: column; }
-  #TabBar > ul > li { border-top: 0.1rem solid rgb(255,255,255); overflow: hidden; height: 4.8rem; transition: height .3s ease, opacity .3s ease; }
-  #TabBar > ul > li > a { padding: 0 1.6rem 0 2rem; width: 100%; justify-content: flex-start; }
-  #TabBar > ul > li.Active > a { border-bottom: none; border-left: 0.4rem solid rgb(0,87,144); padding-left: 1.6rem; } }
+  #TabBar > ul > li { border-top: 1px solid rgb(255,255,255); overflow: hidden; height: 48px; transition: height .3s ease, opacity .3s ease; }
+  #TabBar > ul > li > a { padding: 0 16px 0 20px; width: 100%; justify-content: flex-start; }
+  #TabBar > ul > li.Active > a { border-bottom: none; border-left: 4px solid rgb(0,87,144); padding-left: 16px; } }
 
 @media screen and (max-width: 768px) { #TabBar #ToggleTabBar { display: none; }
   #TabBar #ToggleTabBar:not(:checked) + #ToggleTabBarLabel .Opened { display: none; }
   #TabBar #ToggleTabBar:not(:checked) ~ ul > li { opacity: 0; border-width: 0; height: 0; }
   #TabBar #ToggleTabBar:checked + #ToggleTabBarLabel .Closed { display: none; }
   #TabBar #ToggleTabBarLabel { display: block; }
-  #TabBar #ToggleTabBarLabel > div { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); display: flex; cursor: pointer; padding: 0 1.6rem; height: 4.8rem; align-items: center; justify-content: flex-start; pointer-events: none; }
+  #TabBar #ToggleTabBarLabel > div { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); display: flex; cursor: pointer; padding: 0 16px; height: 48px; align-items: center; justify-content: flex-start; pointer-events: none; }
   #TabBar #ToggleTabBarLabel > div > i { margin-left: auto; } }
 
-.ActionBar { float: right; margin: 1.6rem 3.2rem 0.8rem 0.8rem; font-size: 2.4rem; }
+.ActionBar { float: right; margin: 16px 32px 8px 8px; font-size: 24px; }
 
 .ActionBar > ul { display: flex; flex-wrap: wrap; margin: 0; padding: 0; list-style-type: none; justify-content: flex-end; }
 
 .ActionBar > ul > li { display: flex; border-radius: 50%; }
 
-.ActionBar > ul > li > a { border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 4.8rem; height: 4.8rem; text-decoration: none; color: rgb(158,158,158); }
+.ActionBar > ul > li > a { border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; text-decoration: none; color: rgb(158,158,158); }
 
 .ActionBar > ul > li > a:hover { color: rgb(97,97,97); }
 
 .ActionBar > ul > li > a > i { pointer-events: none; }
 
-@media screen and (max-width: 768px) { .ActionBar { float: none; margin: 0; margin-bottom: 0.8rem; } }
+@media screen and (max-width: 768px) { .ActionBar { float: none; margin: 0; margin-bottom: 8px; } }
 
 #PageContainer .ActionBar { margin: 0; float: none; }
 
-#Breadcrumb { margin: 2.4rem 3.2rem 0; }
+#Breadcrumb { margin: 24px 32px 0; }
 
-@media screen and (max-width: 768px) { #Breadcrumb { margin: 1.6rem 1.6rem 0; } }
+@media screen and (max-width: 768px) { #Breadcrumb { margin: 16px 16px 0; } }
 
 #Breadcrumb > ul { display: flex; flex-wrap: wrap; list-style-type: none; margin: 0; padding: 0; }
 
@@ -4527,13 +4523,13 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 #PageName > h1 { font-size: 16px; font-weight: 400; line-height: 26px; color: rgba(0, 0, 0, 0.87); }
 
-#PageName { margin: 0 3.2rem 1.6rem; }
+#PageName { margin: 0 32px 16px; }
 
-@media screen and (max-width: 768px) { #PageName { margin: 0 1.6rem 1.6rem; } }
+@media screen and (max-width: 768px) { #PageName { margin: 0 16px 16px; } }
 
 #PageName > h1 { margin: 0; padding: 0; }
 
-#PageContainer { padding: 0 1.6rem; }
+#PageContainer { padding: 0 16px; }
 
 @media screen and (max-width: 768px) { #PageContainer { padding: 0; } }
 
@@ -4551,15 +4547,15 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 @media screen and (min-width: 769px) { #Shade.Active.SideBarSwitched { pointer-events: none; opacity: 0; } }
 
-.chosen-container.chosen-container-single { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding-bottom: 0.1rem; border-bottom: 0.1rem solid rgb(238,238,238); transition: all .3s  ease; }
+.chosen-container.chosen-container-single { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding-bottom: 1px; border-bottom: 1px solid rgb(238,238,238); transition: all .3s  ease; }
 
 .chosen-container.chosen-container-single + label { display: none; }
 
 .chosen-container.chosen-container-single .chosen-single { border-radius: 0; background: none; box-shadow: none; padding: 0; border: none; display: flex; align-items: center; }
 
-.chosen-container.chosen-container-single .chosen-single.chosen-single-with-deselect span { margin-right: 4.8rem; }
+.chosen-container.chosen-container-single .chosen-single.chosen-single-with-deselect span { margin-right: 48px; }
 
-.chosen-container.chosen-container-single .chosen-single.chosen-single-with-deselect .search-choice-close { font-size: 15px; font-weight: 500; line-height: 1.15; color: rgba(0, 0, 0, 0.87); display: flex; align-items: center; justify-content: center; top: auto; right: 2.4rem; opacity: 1; background: none; color: rgb(158,158,158); }
+.chosen-container.chosen-container-single .chosen-single.chosen-single-with-deselect .search-choice-close { font-size: 15px; font-weight: 500; line-height: 1.15; color: rgba(0, 0, 0, 0.87); display: flex; align-items: center; justify-content: center; top: auto; right: 24px; opacity: 1; background: none; color: rgb(158,158,158); }
 
 .chosen-container.chosen-container-single .chosen-single.chosen-single-with-deselect .search-choice-close:hover:before { color: rgb(97,97,97); }
 
@@ -4569,35 +4565,35 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 .chosen-container.chosen-container-single .chosen-single:hover > div > b:before { color: rgb(97,97,97); }
 
-.chosen-container.chosen-container-single.chosen-with-drop { padding-bottom: 0; border-bottom: 0.2rem solid rgb(0,87,144); }
+.chosen-container.chosen-container-single.chosen-with-drop { padding-bottom: 0; border-bottom: 2px solid rgb(0,87,144); }
 
-.chosen-container.chosen-container-single .chosen-drop { z-index: 100000; border: none; margin: 0; border-radius: 0; transform-origin: top; transform: scaleY(0); top: calc(100% + 0.2rem); transition: transform .3s ease; }
+.chosen-container.chosen-container-single .chosen-drop { z-index: 100000; border: none; margin: 0; border-radius: 0; transform-origin: top; transform: scaleY(0); top: calc(100% + 2px); transition: transform .3s ease; }
 
-.chosen-container.chosen-container-single .chosen-drop .chosen-search { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding: 0.8rem; }
+.chosen-container.chosen-container-single .chosen-drop .chosen-search { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding: 8px; }
 
-.chosen-container.chosen-container-single .chosen-drop .chosen-search .chosen-search-input { border: none; background: none; background-color: rgb(245,245,245); margin: 0; padding: 0 0.8rem 0 3.2rem; height: 4rem; transition: all .3s ease; }
+.chosen-container.chosen-container-single .chosen-drop .chosen-search .chosen-search-input { border: none; background: none; background-color: rgb(245,245,245); margin: 0; padding: 0 8px 0 32px; height: 40px; transition: all .3s ease; }
 
 .chosen-container.chosen-container-single .chosen-drop .chosen-search .chosen-search-input:focus { background-color: rgb(255,255,255); }
 
-.chosen-container.chosen-container-single .chosen-drop .chosen-search:before { position: absolute; left: 1.6rem; top: 50%; transform: translateY(-50%); color: rgb(158,158,158); font-size: 16px; }
+.chosen-container.chosen-container-single .chosen-drop .chosen-search:before { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: rgb(158,158,158); font-size: 16px; }
 
-.chosen-container.chosen-container-single .chosen-drop .chosen-results { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding: 0.8rem 0; margin: 0; max-height: 16rem; width: 100%; }
+.chosen-container.chosen-container-single .chosen-drop .chosen-results { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding: 8px 0; margin: 0; max-height: 160px; width: 100%; }
 
-.chosen-container.chosen-container-single .chosen-drop .chosen-results .active-result { padding: 0.8rem; }
+.chosen-container.chosen-container-single .chosen-drop .chosen-results .active-result { padding: 8px; }
 
 .chosen-container.chosen-container-single .chosen-drop .chosen-results .active-result.highlighted { color: inherit; background: none; background-color: rgb(238,238,238); }
 
-.chosen-container.chosen-container-single .chosen-drop .chosen-results .no-results { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: transparent; padding: 0.8rem; }
+.chosen-container.chosen-container-single .chosen-drop .chosen-results .no-results { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: transparent; padding: 8px; }
 
 .chosen-container.chosen-container-single .chosen-drop .chosen-results .no-results > span { display: none; }
 
 .chosen-container.chosen-container-single.chosen-with-drop .chosen-drop { transform: scaleY(1); }
 
-#GlobalHeader > #GlobalNav > ul > li.ProjectSelect { margin-top: 0; margin-bottom: 0; width: 20rem; }
+#GlobalHeader > #GlobalNav > ul > li.ProjectSelect { margin-top: 0; margin-bottom: 0; width: 200px; }
 
-#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > select.CreateChosen { position: absolute; width: 100%; bottom: 0.8rem; left: 0; }
+#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > select.CreateChosen { position: absolute; width: 100%; bottom: 8px; left: 0; }
 
-#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > select.CreateChosen + label { top: 0.8rem; transform: none; }
+#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > select.CreateChosen + label { top: 8px; transform: none; }
 
 #GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); border: none; padding: 0; width: 100%; }
 
@@ -4605,23 +4601,23 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 @media screen and (max-width: 768px) { #GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-single { height: 56px; } }
 
-#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-single > span { margin-left: 0.8rem; pointer-events: none; }
+#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-single > span { margin-left: 8px; pointer-events: none; }
 
 #GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-single > div { pointer-events: none; }
 
 #GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-drop { width: 150%; top: 100%; }
 
-#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-drop > .chosen-results { box-sizing: border-box; max-height: calc(100vh - 64px - 4rem - (0.8rem * 2) - 1.6rem); }
+#GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-drop > .chosen-results { box-sizing: border-box; max-height: calc(100vh - 64px - 40px - (8px * 2) - 16px); }
 
-.tinytip { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: rgb(97,97,97); color: rgb(255,255,255); display: flex; align-items: center; padding: 0.8rem; opacity: 0.9; z-index: 150000; border-radius: 0.2rem; pointer-events: none; }
+.tinytip { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: rgb(97,97,97); color: rgb(255,255,255); display: flex; align-items: center; padding: 8px; opacity: 0.9; z-index: 150000; border-radius: 2px; pointer-events: none; }
 
-.tinytip.tinytip-top { margin-bottom: 1.4rem; }
+.tinytip.tinytip-top { margin-bottom: 14px; }
 
-.tinytip.tinytip-bottom { margin-top: 1.4rem; }
+.tinytip.tinytip-bottom { margin-top: 14px; }
 
-.tinytip.tinytip-left { margin-right: 1.4rem; }
+.tinytip.tinytip-left { margin-right: 14px; }
 
-.tinytip.tinytip-right { margin-left: 1.4rem; }
+.tinytip.tinytip-right { margin-left: 14px; }
 
 .tinytip.tinytip-sidenav:not(.SideBarSwitched) { display: none; }
 

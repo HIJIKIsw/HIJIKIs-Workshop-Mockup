@@ -2,15 +2,15 @@
 //= ChosenMaterialTheme.scss
 //--------------------------------------------------------------------------------------------------
 
-	$ChosenSearchBarPadding: 0.8rem;
-	$ChosenSearchInputHeight: 4rem;
+	$ChosenSearchBarPadding: 8px;
+	$ChosenSearchInputHeight: 40px;
 
 	.chosen-container.chosen-container-single
 	{
 		@include Font(Menu);
 
-		padding-bottom: 0.1rem;
-		border-bottom: 0.1rem solid Color(Grey, 200);
+		padding-bottom: 1px;
+		border-bottom: 1px solid Color(Grey, 200);
 		transition: all .3s  ease;
 
 		+ label
@@ -35,7 +35,7 @@
 				{
 					span
 					{
-						margin-right: 4.8rem;
+						margin-right: 48px;
 					}
 
 					.search-choice-close
@@ -47,7 +47,7 @@
 						align-items: center;
 						justify-content: center;
 						top: auto;
-						right: 2.4rem;
+						right: 24px;
 						opacity: 1;
 						background: none;
 						color: Color(Grey);
@@ -85,7 +85,7 @@
 			&.chosen-with-drop
 			{
 					padding-bottom: 0;
-					border-bottom: 0.2rem solid Color(ThemeBlue);
+					border-bottom: 2px solid Color(ThemeBlue);
 			}
 			//
 
@@ -102,7 +102,7 @@
 				border-radius: 0;
 				transform-origin: top;
 				transform: scaleY(0);
-				top: calc(100% + 0.2rem);
+				top: calc(100% + 2px);
 				transition: transform .3s ease;
 
 				.chosen-search
@@ -116,7 +116,7 @@
 						background: none;
 						background-color: Color(Grey, 100);
 						margin: 0;
-						padding: 0 0.8rem 0 3.2rem;
+						padding: 0 8px 0 32px;
 						height: $ChosenSearchInputHeight;
 						transition: all .3s ease;
 
@@ -132,7 +132,7 @@
 					&:before
 					{
 						position: absolute;
-						left: 1.6rem;
+						left: 16px;
 						top: 50%;
 						transform: translateY(-50%);
 						color: Color(Grey);
@@ -143,14 +143,14 @@
 				.chosen-results
 				{
 					@include Font(Menu);
-					padding: 0.8rem 0;
+					padding: 8px 0;
 					margin: 0;
-					max-height: 16rem;
+					max-height: 160px;
 					width: 100%;
 
 					.active-result
 					{
-						padding: 0.8rem;
+						padding: 8px;
 
 						&.highlighted
 						{
@@ -164,7 +164,7 @@
 					{
 						@include Font(Caption);
 						background-color: transparent;
-						padding: 0.8rem;
+						padding: 8px;
 
 						> span
 						{

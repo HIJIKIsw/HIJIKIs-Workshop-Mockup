@@ -8,23 +8,23 @@
 		.SelectboxContainer
 		{
 			position: relative;
-			margin: 2.4rem 0 1.6rem;
+			margin: 24px 0 16px;
 
 			select
 			{
 				position: relative;
 				border: none;
-				border-bottom: 0.1rem solid Color(Grey, 200);
+				border-bottom: 1px solid Color(Grey, 200);
 				outline: none;
 				transition: all .3s;
 				padding: 0.1em;
-				padding-right: 2.4rem;
-				padding-bottom: calc(0.1em + 0.1rem);
+				padding-right: 24px;
+				padding-bottom: calc(0.1em + 1px);
 				border-radius: 0;
-				min-height: 2.8rem;
+				min-height: 28px;
 				max-width: 100%;
 				background: transparent url('../svg/SelectboxDownArrow.svg') right 0 center no-repeat;
-				background-size: 2.4rem;
+				background-size: 24px;
 				cursor: pointer;
 
 				// Hide arrow
@@ -40,7 +40,7 @@
 				&:focus
 				{
 					padding-bottom: 0.1em;
-					border-bottom: 0.2rem solid Color(ThemeBlue);
+					border-bottom: 2px solid Color(ThemeBlue);
 				}
 
 				& + label
@@ -69,25 +69,25 @@
 		.TextfieldContainer
 		{
 			position: relative;
-			margin: 3.2rem 0 2.4rem;
+			margin: 32px 0 24px;
 
 			input[type=text]
 			{
 				position: relative;
 				border: none;
-				border-bottom: 0.1rem solid Color(Grey, 200);
+				border-bottom: 1px solid Color(Grey, 200);
 				outline: none;
 				transition: all .3s;
 				padding: 0.1em;
-				padding-bottom: calc(0.1em + 0.1rem);
+				padding-bottom: calc(0.1em + 1px);
 				border-radius: 0;
-				min-height: 2.8rem;
+				min-height: 28px;
 				box-sizing: border-box;
 
 				&:focus
 				{
 					padding-bottom: 0.1em;
-					border-bottom: 0.2rem solid Color(ThemeBlue);
+					border-bottom: 2px solid Color(ThemeBlue);
 				}
 
 				& + label
@@ -118,27 +118,27 @@
 		.TextareaContainer
 		{
 			position: relative;
-			margin: 3.2rem 0 2.4rem;
+			margin: 32px 0 24px;
 
 			textarea
 			{
 				position: relative;
 				border: none;
-				border-bottom: 0.1rem solid Color(Grey, 200);
+				border-bottom: 1px solid Color(Grey, 200);
 				outline: none;
 				transition: border-color .3s, border-width .3s, padding-bottom.3s;
 				padding: 0.1em;
 				padding-top: 0.4em;
-				padding-bottom: calc(0.1em + 0.1rem);
+				padding-bottom: calc(0.1em + 1px);
 				border-radius: 0;
-				min-height: 2.8rem;
+				min-height: 28px;
 				box-sizing: border-box;
 				vertical-align: bottom;											// Chrome における下部の余白対策
 
 				&:focus
 				{
 					padding-bottom: 0.1em;
-					border-bottom: 0.2rem solid Color(ThemeBlue);
+					border-bottom: 2px solid Color(ThemeBlue);
 				}
 
 				& + label
@@ -166,7 +166,6 @@
 	//----------------------------------------------------------------------------------------------
 	//= Checkbox
 	//----------------------------------------------------------------------------------------------
-		/**/
 		.CheckboxContainer
 		{
 			> label > input[type=checkbox]
@@ -176,13 +175,13 @@
 				& + span
 				{
 					position: relative;
-					padding-left: 2.6rem;
+					padding-left: 26px;
 
 					&:before
 					{
 						@extend .mdi-set;
 						position: absolute;
-						top: -0.1rem;
+						top: -1px;
 						left: 0;
 						content: "\f131";
 						color: Color(Grey);
@@ -195,9 +194,9 @@
 						content: "";
 						display: block;
 						position: absolute;
-						width: 2.4rem;
-						height: 2.4rem;
-						top: -0.1rem;
+						width: 24px;
+						height: 24px;
+						top: -1px;
 						left: 0;
 						pointer-events: none;
 						background-color: Color(ThemeBlue);
@@ -235,66 +234,10 @@
 				}
 			}
 		}
-		/**/
-
-		/**
-		.Input.CheckboxContainer
-		{
-			> label > input[type=checkbox]
-			{
-				display: none;
-
-				& + span
-				{
-					position: relative;
-					padding-left: 1.5em;
-
-					&:before
-					{
-						position: absolute;
-						content: "";
-						top: 50%;
-						left: 0;
-						transform: translateY(-50%);
-						display: block;
-						width: 1em;
-						height: 1em;
-						border: 0.2rem solid Color(White);
-						box-sizing: border-box;
-					}
-				}
-
-				&:checked + span
-				{
-					&:before
-					{
-						background-color: Color(Blue);
-						border: none;
-					}
-
-					&:after
-					{
-						content: "";
-						display: block;
-						position: absolute;
-						width: 0.3em;
-						height: 0.6em;
-						border-bottom: 0.15em solid Color(White);
-						border-right: 0.15em solid Color(White);
-						background: transparent;
-						top: 0.24em;
-						left: 0.3em;
-						transform: rotate(45deg);
-					}
-				}
-			}
-		}
-		/**/
 
 	//----------------------------------------------------------------------------------------------
 	//= Radio Button
 	//----------------------------------------------------------------------------------------------
-		/**/
 		.RadioButtonContainer
 		{
 			label > input[type=radio]
@@ -304,13 +247,13 @@
 				& + span
 				{
 					position: relative;
-					padding-left: 2.6rem;
+					padding-left: 26px;
 
 					&:before
 					{
 						@extend .mdi-set;
 						position: absolute;
-						top: -0.1rem;
+						top: -1px;
 						left: 0;
 						content: "\f43d";
 						color: Color(Grey);
@@ -323,9 +266,9 @@
 						content: "";
 						display: block;
 						position: absolute;
-						width: 2.4rem;
-						height: 2.4rem;
-						top: -0.1rem;
+						width: 24px;
+						height: 24px;
+						top: -1px;
 						left: 0;
 						pointer-events: none;
 						background-color: Color(ThemeBlue);

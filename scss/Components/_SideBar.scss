@@ -22,7 +22,7 @@
 		> #SideNav
 		{
 			width: 100%;
-			padding-top: 1.6rem;
+			padding-top: 16px;
 
 			> ul
 			{
@@ -36,7 +36,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: flex-start;
-					height: 4.8rem;
+					height: 48px;
 
 					> a
 					{
@@ -48,14 +48,14 @@
 						justify-content: flex-start;
 						text-decoration: none;
 						height: 100%;
-						padding-left: 1.6rem;
+						padding-left: 16px;
 						color: Color(BlueGrey, 200);
-						border-left: 0.4rem solid transparent;
+						border-left: 4px solid transparent;
 
 						> i
 						{
 							font-size: 24px;
-							margin-right: 0.2rem;
+							margin-right: 2px;
 							pointer-events: none;
 						}
 
