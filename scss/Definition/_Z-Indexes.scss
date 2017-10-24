@@ -5,13 +5,12 @@
 	$Z-Indexes:
 	(
 		MainContainer:				0,
-		SideBar:					160,
-		GlobalHeader:				40,
-		Shade:						50000,
-		ChosenDropdown:				100000,
-		Tooltip:					150000,
-		RippleEffect:				500000,
-		NoScript:					999999,
+		SideBar:					10,
+		GlobalHeader:				100,
+		ChosenDropdown:				1000,
+		Tooltip:					10000,
+		Shade:						100000,
+		NoScript:					1000000,
 	);
 
 	@function Z-Index($_type)

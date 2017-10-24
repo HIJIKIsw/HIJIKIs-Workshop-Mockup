@@ -4165,7 +4165,7 @@ html, body { background-color: rgb(250,250,250); overflow-x: hidden; width: 100%
 
 body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; }
 
-#NoScript { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: rgb(244,67,54); color: rgb(255,255,255); position: fixed; bottom: 0; right: 0; width: auto; z-index: 999999; text-align: center; padding: 8px; opacity: 0.9; }
+#NoScript { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: rgb(244,67,54); color: rgb(255,255,255); position: fixed; bottom: 0; right: 0; width: auto; z-index: 1000000; text-align: center; padding: 8px; opacity: 0.9; }
 
 #NoScript > p { margin: 8px; }
 
@@ -4349,7 +4349,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 .RadioButtonContainer label > input[type=radio]:checked + span:before { color: rgb(0,87,144); content: "\f43e"; }
 
-#GlobalHeader { position: fixed; top: 0; left: 0; margin-left: 240px; display: flex; background-color: rgb(255,255,255); width: calc(100% - 240px); height: 64px; z-index: 40; }
+#GlobalHeader { position: fixed; top: 0; left: 0; margin-left: 240px; display: flex; background-color: rgb(255,255,255); width: calc(100% - 240px); height: 64px; z-index: 100; }
 
 @media screen and (max-width: 768px) { #GlobalHeader { margin-left: 0; width: 100%; height: 56px; } }
 
@@ -4418,7 +4418,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 #SearchBar > .Close:hover { color: rgb(97,97,97); }
 
-#SideBar { position: fixed; top: 0; left: 0; overflow-y: auto; background-color: rgb(55,71,79); width: 240px; height: 100%; z-index: 160; }
+#SideBar { position: fixed; top: 0; left: 0; overflow-y: auto; background-color: rgb(55,71,79); width: 240px; height: 100%; z-index: 10; }
 
 @media screen and (max-width: 768px) { #SideBar { margin-left: -240px; } }
 
@@ -4539,7 +4539,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 @media screen and (max-width: 768px) { #MediaQuery { font-family: 'Small'; } }
 
-#Shade { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 50000; background-color: rgb(0,0,0); opacity: 0; pointer-events: none; transition-duration: .3s; transition-timing-function: ease; transition-property: opacity, top, margin-left; }
+#Shade { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100000; background-color: rgb(0,0,0); opacity: 0; pointer-events: none; transition-duration: .3s; transition-timing-function: ease; transition-property: opacity, top, margin-left; }
 
 #Shade.Active { opacity: 0.5; pointer-events: auto; }
 
@@ -4567,7 +4567,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 .chosen-container.chosen-container-single.chosen-with-drop { padding-bottom: 0; border-bottom: 2px solid rgb(0,87,144); }
 
-.chosen-container.chosen-container-single .chosen-drop { z-index: 100000; border: none; margin: 0; border-radius: 0; transform-origin: top; transform: scaleY(0); top: calc(100% + 2px); transition: transform .3s ease; }
+.chosen-container.chosen-container-single .chosen-drop { z-index: 1000; border: none; margin: 0; border-radius: 0; transform-origin: top; transform: scaleY(0); top: calc(100% + 2px); transition: transform .3s ease; }
 
 .chosen-container.chosen-container-single .chosen-drop .chosen-search { font-size: 14px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.87); padding: 8px; }
 
@@ -4609,7 +4609,7 @@ body { font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino
 
 #GlobalHeader > #GlobalNav > ul > li.ProjectSelect > .chosen-container.chosen-container-single > .chosen-drop > .chosen-results { box-sizing: border-box; max-height: calc(100vh - 64px - 40px - (8px * 2) - 16px); }
 
-.tinytip { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: rgb(97,97,97); color: rgb(255,255,255); display: flex; align-items: center; padding: 8px; opacity: 0.9; z-index: 150000; border-radius: 2px; pointer-events: none; }
+.tinytip { font-size: 13px; font-weight: 400; line-height: 1.15; color: rgba(0, 0, 0, 0.54); background-color: rgb(97,97,97); color: rgb(255,255,255); display: flex; align-items: center; padding: 8px; opacity: 0.9; z-index: 10000; border-radius: 2px; pointer-events: none; }
 
 .tinytip.tinytip-top { margin-bottom: 14px; }
 
